@@ -1,0 +1,49 @@
+p.smallwords{
+	color:grey;
+	font-size:12px;
+	line-height:5px;
+}
+div.card{
+	width:250px;
+	height:370px;
+	display:inline-block;
+	margin-right:106px;
+	margin-top:50px;
+}
+div.thumbnail{
+	width:250px;
+	height:250px;
+	background-color:grey;
+	border:solid 1px;
+	border-color:#6A8AF6
+}
+div.place{
+	display:inline-block;
+	float:right;
+	padding-top:15px;
+	color:pink;
+	height:50px;
+}
+p.place{
+	position:relative;
+	display:inline-block;
+	font-weight:bold;
+	height:10px;
+}
+p.position{
+	height:10px;
+}
+div.pagination{
+	text-align:center;
+}
+button.button{
+	background-color:#6A8AF6;
+	border:solid 1px;
+	border-color:#6A8AF6;
+}
+footer.footer{
+	text-align:center;
+}
+h1.words{
+	color:#FF9B9B
+}
