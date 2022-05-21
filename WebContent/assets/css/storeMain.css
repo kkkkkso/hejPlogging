@@ -1,168 +1,192 @@
 body {
-    margin: 0px;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-    color: #212121;
-    overflow-x: hidden;
-    overflow-y: scroll;
+	margin: 0px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	color: #212121;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 div.inside {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 15px;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
+/* 페이지 이름 */
+div.page-name {
+	margin: 15px 0;
+	padding: 0 7.5px;
+}
+
+div.page-name h5 {
+	line-height: 1.2;
+	font-style: normal;
+	margin: 10px 0;
+}
+
+div.page-name strong {
+	font-size: 18px;
+	font-weight: 700;
+
+}
+
+div.page-name span {
+	font-size: 16px;
+	line-height: 1;
+	margin: 0;
+}
+/* 페이지 이름 끝 */
+
+/* 카테고리 */
 div.category-container {
-    display: flex;
+	display: flex;
 }
 
 div.category-wrapper {
-    margin: 15px 0;
+	margin: 15px 0;
 }
 
 div.category-name {
-    width: 25%;
-    text-align: left;
-    list-style: none;
+	width: 25%;
+	text-align: left;
+	list-style: none;
 }
 
 div.category-name span {
-    padding: 0 7.5px;
+	padding: 0 7.5px;
 }
 
 div.category-list {
-    width: 75%;
-    text-align: left;
-    overflow: hidden;
+	width: 75%;
+	text-align: left;
+	overflow: hidden;
 }
 
 ul {
-    margin: 0 0;
-    padding: 0 0;
-    display: inline-block;
-    cursor: pointer;
-    list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+	display: inline-block;
+	cursor: pointer;
+	list-style: none;
 }
 
 li {
-    float: left;
-    padding: 4px 15px;
+	float: left;
+	padding: 4px 15px;
 }
 
 li > a {
-    font-size: 13px;
-    color: rgba(33, 33, 33, 0.7);
-    text-decoration: none;
+	font-size: 13px;
+	color: rgba(33, 33, 33, 0.7);
+	text-decoration: none;
 }
+/* 카테고리 끝 */
+
 
 div.hr-wrapper {
-    padding: 0 7.5px;
-    margin: 15px 0;
+	padding: 0 7.5px;
+	margin: 15px 0;
 }
 
 hr {
-    border: 0;
-    border-top: 1px solid #eee;
+	border: 0;
+	border-top: 1px solid #eee;
 }
 
+/* 상품 목록 */
 div.product-container {
-    margin: 15px 0;
+	margin: 15px 0;
 }
 
 div.product-sort {
-    padding: 0 7.5px 15px 7.5px;
-    margin: 5px 0;
-    text-align: right;
+	padding: 0 7.5px 15px 7.5px;
+	margin: 5px 0;
+	text-align: right;
 }
 
 select {
-    display: inline-block;
-    font-size: 16px;
-    color: #212121;
-    border: 0;
-    cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	color: #212121;
+	border: 0;
+	cursor: pointer;
 }
 
 select::after {
-    color: #212121;
-    display: inline-block;
-    content: '\f2f2';
+	color: #212121;
+	display: inline-block;
+	content: '\f2f2';
 }
 
 div#wrap-3 {
-    display: table;
+	display: table;
 }
 
 div#wrap-2 {
-    display: none;
+	display: none;
 }
 
 /* 상품 2칸 0px ~ 764px */
 @media (max-width: 764px) {
-    div#wrap-3 {
-        display: none;
-    }
+	div#wrap-3 {
+		display: none;
+	}
 
-    div#wrap-2 {
-        display: table;
-    }
+	div#wrap-2 {
+		display: table;
+	}
 }
 
 div.row {
-    display: table-row;
+	display: table-row;
 }
 
 div.col {
-    display: table-cell;
-    padding: 0 7.5px 30px 7.5px;
-    text-align: center;
+	display: table-cell;
+	padding: 0 7.5px 30px 7.5px;
+	text-align: center;
 }
 
 div.product-img-wrapper a {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 div.product-img-wrapper img {
-    width: 100%;
+	width: 100%;
 }
 
 div.product-detail {
-    height: auto;
-    text-align: left;
-    line-height: 1.6;
-    padding-top: 8px;
+	height: auto;
+	text-align: left;
+	line-height: 1.6;
+	padding-top: 8px;
 }
 
 div.product-name {
-    font-size: 14px;
-    font-weight: normal;
-    cursor: pointer;
+	font-size: 14px;
+	font-weight: normal;
+	cursor: pointer;
 }
 
 div.product-name a {
-    color: #212121;
-    text-decoration: none;
+	color: #212121;
+	text-decoration: none;
 }
 
 div.product-price {
-    font-size: 14px;
-    font-weight: bold;
-    color: #000;
-    margin: 0 0 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin: 0 0 10px;
 }
 
 div.product-price p {
-    margin: 0 0;
+	margin: 0 0;
 }
+/* 상품 목록 끝 */
 
 nav.product-page {
-    text-align: center;
-    margin: 20px 0;
+	text-align: center;
+	margin: 20px 0;
 }
-
-
-
-
-
-   

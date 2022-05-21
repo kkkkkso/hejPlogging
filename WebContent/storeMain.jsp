@@ -3,13 +3,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>스토어</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>스토어</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/storeMain.css">
 </head>
 <body>
 	<section>
 		<div class="inside">
+			<!-- 페이지 이름 -->
+			<div class="page-name">
+				<h5><span><strong>스토어</strong></span></h5>
+				<span>플러깅으로 환경도 보호하고 제로웨이스트 상품도 구매하세요~!</span>
+			</div>
+			<!-- hr -->
+			<div class="hr-wrapper">
+				<hr>
+			</div>
 			<div class="category-container">
+				
 				<!-- 카테고리 -->
 				<div class="category-name category-wrapper">
 					<span>카테고리</span>
@@ -53,7 +69,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href="storeSpecific.html"><img src="img/product1.jpg"></a>
+								<a href="storeSpecific.html"><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -66,7 +82,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product2.jpg"></a>
+								<a href=""><img src="assets/img/store/silicone_straw.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -79,7 +95,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product3.jpg"></a>
+								<a href=""><img src="assets/img/store/samcraft_originbalm.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -94,7 +110,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product1.jpg"></a>
+								<a href=""><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -107,7 +123,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product2.jpg"></a>
+								<a href=""><img src="assets/img/store/silicone_straw.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -120,7 +136,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product3.jpg"></a>
+								<a href=""><img src="assets/img/store/samcraft_originbalm.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -135,7 +151,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product1.jpg"></a>
+								<a href=""><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -148,7 +164,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product2.jpg"></a>
+								<a href=""><img src="assets/img/store/silicone_straw.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -161,7 +177,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product3.jpg"></a>
+								<a href=""><img src="assets/img/store/samcraft_originbalm.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -176,7 +192,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product1.jpg"></a>
+								<a href=""><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -189,7 +205,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product2.jpg"></a>
+								<a href=""><img src="assets/img/store/silicone_straw.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -202,7 +218,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product3.jpg"></a>
+								<a href=""><img src="assets/img/store/samcraft_originbalm.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -220,7 +236,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href="storeSpecific.html"><img src="img/product1.jpg"></a>
+								<a href="storeSpecific.html"><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -233,7 +249,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product2.jpg"></a>
+								<a href=""><img src="assets/img/store/silicone_straw.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -248,7 +264,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product3.jpg"></a>
+								<a href=""><img src="assets/img/store/samcraft_originbalm.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -261,7 +277,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product1.jpg"></a>
+								<a href=""><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -276,7 +292,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product2.jpg"></a>
+								<a href=""><img src="assets/img/store/silicone_straw.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -289,7 +305,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product3.jpg"></a>
+								<a href=""><img src="assets/img/store/samcraft_originbalm.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -304,7 +320,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product1.jpg"></a>
+								<a href=""><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -317,7 +333,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product2.jpg"></a>
+								<a href=""><img src="assets/img/store/silicone_straw.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -332,7 +348,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product3.jpg"></a>
+								<a href=""><img src="assets/img/store/samcraft_originbalm.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -345,7 +361,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product1.jpg"></a>
+								<a href=""><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -360,7 +376,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product2.jpg"></a>
+								<a href=""><img src="assets/img/store/silicone_straw.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
@@ -373,7 +389,7 @@
 						</div>
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="img/product3.jpg"></a>
+								<a href=""><img src="assets/img/store/samcraft_originbalm.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
