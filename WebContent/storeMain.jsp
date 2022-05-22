@@ -69,11 +69,11 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href="storeSpecific.html"><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
+								<a href="storeSpecific.jsp"><img src="assets/img/store/bamboo_toothbrush.jpg"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
-									<a href="storeSpecific.html">[지구샵] 대나무칫솔</a>
+									<a href="storeSpecific.jsp">[지구샵] 대나무칫솔</a>
 								</div>
 								<div class="product-price">
 									<p>3,800원</p>
