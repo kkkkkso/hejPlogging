@@ -1,0 +1,148 @@
+body {
+	margin: 0px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	color: #212121;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+div.inside {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+div.course-container {
+	padding-top: 14px;
+	margin: 0 -15px;
+}
+
+div#wrap-2 {
+	display: flex;
+}
+
+div#wrap-1 {
+	display: none;
+}
+
+/* display: flex > 반반 */
+div.course-thumbs-wrapper, .course-form-wrapper {
+	width: 50%;
+	padding: 0 15px;
+}
+
+div.course-form {
+	padding-left: 15%;
+}
+
+/* 페이지 한 줄 0px ~ 991px */
+@media (max-width: 991px) {
+	
+	div.course-container {
+		padding-top: 14px;
+		padding: 15px;
+	}
+
+	div#wrap-2 {
+		display: none;
+	}
+
+	div#wrap-1 {
+		display: block;
+	}
+	
+	/* 반반이던 틀 한 줄로 */
+	div.course-thumbs-wrapper, .course-form-wrapper {
+		width: 100%;
+		padding: 0 0;
+	}
+
+	div.course-form {
+		padding: 0;
+		margin-top: 20px;
+	}
+
+}
+
+div.holder img {
+	width: 100%;
+}
+
+/* 코스명 및 가격 */
+div.course-form header {
+	/* 상품명 하단 수평선 */
+	border-color: rgba(33,33,33,0.1);
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	margin: 0 0 24px;
+	padding-bottom: 24px;
+	line-height: normal;
+}
+
+div.course-title {
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-bottom: 0.3em;
+}
+
+div.course-summary {
+	height: 100px;
+	margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+	div.course-summary {
+		height: auto;
+		margin-bottom: 50px;
+	}
+}
+/* 코스명 및 설명 끝 */
+
+div.plogging-btn {
+	text-align: center;
+}
+
+div.plogging-btn button {
+	padding: 6% 30%;
+	font-size: 18px;
+}
+
+/* 상세설명 */
+div.course-detail-container {
+	padding-top: 35px;
+}
+
+div.hr-wrapper {
+	padding: 0 7.5px;
+	margin: 15px 0;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #eee;
+}
+
+div.course-detail-wrapper {
+	padding-top: 35px;
+	text-align: center;
+}
+
+div.course-detail {
+	margin-top: 20px;
+}
+
+div.course-detail p {
+	margin: 0 0 10px;
+}
+
+div.course-detail img {
+	max-width: 100%;
+	margin: 5px auto;
+}
+/* 상세설명 끝 */
