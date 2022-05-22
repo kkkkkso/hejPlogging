@@ -27,11 +27,11 @@
 					<div class="row">
 						<div class="col">
 							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/seongdangmot.png"></a>
+								<a href="courseSpecific.jsp"><img src="assets/img/course/seongdangmot.png"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
-									<a href="">추천 코스 - 대구 성당못</a>
+									<a href="courseSpecific.jsp">추천 코스 - 대구 성당못</a>
 								</div>
 							</div>
 						</div>
