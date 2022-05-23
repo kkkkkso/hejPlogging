@@ -62,7 +62,7 @@
                 </a>
             </div>
             <div class="small_img" >
-                <a href="diary.html">
+                <a href="diary.jsp">
                     <img class="link_img" src="assets/img/mainPage/review.png" alt="">
                     <div>후기 작성</div>
                 </a>
@@ -141,7 +141,7 @@
                 </div>
                 <!-- 더보기 -->
                 <div class="title_detail">
-                    <a href="diary.html">
+                    <a href="diary.jsp">
                         	더보기
                     </a>
                 </div>
@@ -149,7 +149,7 @@
             <!-- 게시글사진, 설명 감싸기 -->
             <div class="list_review_picture_wrap">
                 <div class="review_picture_wrap">
-                    <a class ="post_img_wrap" href="diary.html">
+                    <a class ="post_img_wrap" href="diarycontent.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -157,7 +157,7 @@
                     </a>
                 </div>
                 <div class="review_picture_wrap">
-                    <a class ="post_img_wrap" href="diary.html">
+                    <a class ="post_img_wrap" href="diarycontent.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -165,7 +165,7 @@
                     </a>
                 </div>
                 <div class="review_picture_wrap">
-                    <a class ="post_img_wrap" href="diray.html">
+                    <a class ="post_img_wrap" href="diraycontent.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -233,15 +233,15 @@
                 </div>
                 <!-- 더보기 -->
                 <div class="title_detail">
-                    <a href="">
-                        더보기
+                    <a href="campaign.jsp">
+                        	더보기
                     </a>
                 </div>
             </div>
             <!-- 게시글사진, 설명 감싸기 -->
             <div class="list_campaign_picture_wrap">
                 <div class="campaign_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="campaigncontent.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -249,7 +249,7 @@
                     </a>
                 </div>
                 <div class="campaign_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="campaigncontent.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -257,7 +257,7 @@
                     </a>
                 </div>
                 <div class="campaign_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="campaigncontent.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
