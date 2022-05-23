@@ -31,17 +31,17 @@
             </div>
             <!-- 마이페이지 -->
             <div class="mypage_area">
-                <h3>
+                <div>
                     <!-- 마이페이지 -->
                     <a href="order.jsp">마이페이지</a>
-                </h3>
+                </div>
             </div>
             <!-- 로그인 -->
             <div class="login_area">
-                <h3>
+                <div>
                     	로그인
                     <!-- 로그아웃 -->
-                </h3>
+                </div>
             </div>
         </div>
     </header>
@@ -105,7 +105,7 @@
                 <div class="start_picture_wrap">
                     <a class ="post_img_wrap" href="courseSpecific.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/course/oido.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -113,7 +113,7 @@
                 <div class="start_picture_wrap">
                     <a class ="post_img_wrap" href="courseSpecific.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/course/seongdangmot.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -121,7 +121,7 @@
                 <div class="start_picture_wrap">
                     <a class ="post_img_wrap" href="courseSpecific.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/course/yangjaecheon.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -142,7 +142,7 @@
                 <!-- 더보기 -->
                 <div class="title_detail">
                     <a href="diary.html">
-                        더보기
+                        	더보기
                     </a>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                 <div class="store_picture_wrap">
                     <a class ="post_img_wrap" href="storeSpecific.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/store/bamboo_toothbrush.jpg" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -205,7 +205,7 @@
                 <div class="store_picture_wrap">
                     <a class ="post_img_wrap" href="storeSpecific.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/store/samcraft_originbalm.jpg" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -213,7 +213,7 @@
                 <div class="store_picture_wrap">
                     <a class ="post_img_wrap" href="storeSpecific.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/store/silicone_straw.jpg" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -300,4 +300,5 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="assets/js/mainPage.js"></script>
 </html>
