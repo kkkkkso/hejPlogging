@@ -1,7 +1,4 @@
 @charset "UTF-8";
-*{
-	font-family: 'Jua', sans-serif;
-}
 div#wrap {
     width: 1080px;
     margin: 0 auto;
@@ -63,4 +60,15 @@ button.navi{
   padding:20px;
   background-color: white;
   border:0px;
+}
+button.button{
+	background-color:#6A8AF6;
+	border:solid 1px;
+	border-color:#6A8AF6;
+}
+footer.footer{
+	text-align:center;
+}
+h1.words{
+	color:#FF9B9B
 }

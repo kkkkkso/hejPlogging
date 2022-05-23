@@ -36,14 +36,7 @@ p.position{
 div.pagination{
 	text-align:center;
 }
-button.button{
-	background-color:#6A8AF6;
-	border:solid 1px;
-	border-color:#6A8AF6;
-}
-footer.footer{
-	text-align:center;
-}
-h1.words{
-	color:#FF9B9B
+p.position1{
+	color:#6A8AF6;
+	height:10px;
 }

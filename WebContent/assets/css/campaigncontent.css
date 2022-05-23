@@ -1,0 +1,38 @@
+@charset "UTF-8";
+div.size{
+	display:inline-block;
+	width:400px;
+	height:400px;
+	background-color:grey;
+	margin-top:40px;
+	margin-left:60px;
+}
+div.size1{
+	display:inline-block;
+	width:450px;
+	margin-left:60px;
+	position:relative;
+}
+
+strong.inline{
+	display:inline-block;
+}
+
+p.inline{
+	display:inline-block;
+	float:right;
+}
+h1.location{
+	}
+
+div.first{
+	width:450px;
+	position:absolute;
+	border-bottom:solid 1px;
+	border-color:grey
+}
+p.place{
+	position:absolute;
+	top:120px;
+	color:grey;
+}
