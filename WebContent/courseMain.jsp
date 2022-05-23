@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/courseMain.css">
 </head>
 <body>
+	<jsp:include page="header.jsp"/>
 	<section>
 		<div class="inside">
 			<div class="page-name">
@@ -287,8 +288,8 @@
 						</div>
 					</div>
 				</div>
-				<nav class="product-page">
-					<ul>
+				<nav class="page">
+					<ul class="page">
 						<li class="page"><a href="">&lt</a></li>
 						<li class="page"><a href="">1</a></li>
 						<li class="page"><a href="">2</a></li>

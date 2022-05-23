@@ -54,6 +54,25 @@ div.login-mypage, div.login {
 	word-break: keep-all;
 }
 
-nav {
+nav.navbar {
 	border: 1px solid #eee;
+}
+
+nav.navbar ul {
+	margin: 0 0;
+	padding: 0 0;
+	display: inline-block;
+	cursor: pointer;
+	list-style: none;
+}
+
+nav.navbar li {
+	float: left;
+	padding: 4px 15px;
+}
+
+nav.navbar li > a {
+	font-size: 13px;
+	color: rgba(33, 33, 33, 0.7);
+	text-decoration: none;
 }

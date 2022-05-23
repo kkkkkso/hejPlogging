@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/courseSpecific.css">
 </head>
 <body>
+	<jsp:include page="header.jsp"/>
 	<section>
 		<div class="inside">
 			<!-- 두 줄: min-width 992px -->

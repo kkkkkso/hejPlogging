@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/storeMain.css">
 </head>
 <body>
+	<jsp:include page="header.jsp"/>
 	<section>
 		<div class="inside">
 			<!-- 페이지 이름 -->
@@ -403,8 +404,8 @@
 					</div>
 				</div>
 				<!-- 쪽넘김 -->
-				<nav class="product-page">
-					<ul>
+				<nav class="page">
+					<ul class="page">
 						<li class="page"><a href="">&lt</a></li>
 						<li class="page"><a href="">1</a></li>
 						<li class="page"><a href="">2</a></li>
