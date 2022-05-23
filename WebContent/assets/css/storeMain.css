@@ -63,7 +63,7 @@ div.category-list {
 	overflow: hidden;
 }
 
-ul {
+ul.page {
 	margin: 0 0;
 	padding: 0 0;
 	display: inline-block;
@@ -71,12 +71,12 @@ ul {
 	list-style: none;
 }
 
-li {
+li.page {
 	float: left;
 	padding: 4px 15px;
 }
 
-li > a {
+li.page > a {
 	font-size: 13px;
 	color: rgba(33, 33, 33, 0.7);
 	text-decoration: none;
@@ -186,7 +186,7 @@ div.product-price p {
 }
 /* 상품 목록 끝 */
 
-nav.product-page {
+nav.page {
 	text-align: center;
 	margin: 20px 0;
 }
