@@ -11,13 +11,13 @@
 <body>
 	<div id="wrap">
 		<header class ="title">
-			<h1 class="title">HeJ,PLOGGING </h1>
+			<h1 class="title"><a href="mainPage.jsp">HeJ,PLOGGING</a></h1>
 			<div class="search">
 				<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" class ="img" >
 				<input type="text" placeholder="검색" class="textline">
 			</div>
 		<div class ="words">
-			<p class ="line">마이페이지</p>
+			<p class ="line"><a href="order.jsp">마이페이지</a></p>
 			<p class ="line">로그아웃</p>
 		</div>	
 		</header>
