@@ -11,6 +11,7 @@ a{
 
 a:visited{
     text-decoration:none;
+    color: black;
 }
 
 .page_wrap{
