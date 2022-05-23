@@ -1,0 +1,117 @@
+button.openBtn {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal .bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .modalBox {
+    position: absolute;
+    background-color: #fff;
+    width: 320px;
+
+    padding: 24px;
+  }
+
+
+  .hidden {
+    display: none;
+  }
+
+ 
+ body{
+    font-family: 'Noto Sans', sans-serif;
+    width:320px;
+    height:500x;
+    padding: 32px 24px 24px;
+  }
+  input::placeholder{
+    font-family: 'Noto Sans', sans-serif;
+  }
+  button{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+  }
+  label{
+        cursor: pointer;
+  }
+
+  div.closeBtn {
+      display:inline-block;*display:inline;
+      position: absolute;
+      margin: -70px 0px 0px 300px;
+      cursor: pointer;
+    } 
+
+  div.closeBtn:after {
+      display: inline-block;content: "\00d7"; font-size:15pt;
+    }
+
+
+    div.top{
+        font-size: 24px;
+        font-weight: 600;;
+        margin: 0 0px 20px 0px;
+        text-align: center;     
+  }
+    
+  i.icon_kakao{
+        display: inline-block;
+        background: url(https://mustit-ux.s3.ap-northeast-2.amazonaws.com/img/m/m_sprites/sprite_simple_login_v2.png) no-repeat;
+        background-size: 172px 39px;
+        background-position: -152.3px -1.6px;
+        width: 18px;
+        height: 17px;
+        margin-right: 7px;
+  }
+
+div.border{
+    display:flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 30);
+    font-size: 14px;
+    margin: 25px 0;
+}
+div.border span{
+    color: #212121;
+}
+
+div.border::before{
+    content: "";
+    flex-grow: 1;
+    margin: 0 16px;
+    background:#e6e6e6;
+    height: 0.5px;
+    font-size: 0;
+    line-height: 0;
+}
+div.border::after{
+    content: "";
+    flex-grow: 1;
+    margin: 0 16px;
+    background:#e6e6e6;
+    height: 0.5px;
+    font-size: 0;
+    line-height: 0;
+}
+
+  
+@charset "UTF-8";
