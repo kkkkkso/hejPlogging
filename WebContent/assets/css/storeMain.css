@@ -1,3 +1,13 @@
+a:link{
+    text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	color: black;
+    text-decoration:none;
+}
+
 body {
 	margin: 0px;
 	font-family: 'Noto Sans', sans-serif;
@@ -63,23 +73,26 @@ div.category-list {
 	overflow: hidden;
 }
 
-ul.page {
-	margin: 0 0;
-	padding: 0 0;
-	display: inline-block;
-	cursor: pointer;
-	list-style: none;
+ul.page, ul.category {
+   margin: 0 0;
+   padding: 0 0;
+   display: inline-block;
+   cursor: pointer;
+   list-style: none;
 }
 
-li.page {
-	float: left;
-	padding: 4px 15px;
+li.page, li.category {
+   float: left;
+   padding: 4px 15px;
+   list-style: none;
+   cursor: pointer;
+   text-decoration: none;
 }
 
-li.page > a {
-	font-size: 13px;
-	color: rgba(33, 33, 33, 0.7);
-	text-decoration: none;
+li.page > a, li.category > a {
+   font-size: 13px;
+   color: rgba(33, 33, 33, 0.7);
+   text-decoration: none;
 }
 /* 카테고리 끝 */
 

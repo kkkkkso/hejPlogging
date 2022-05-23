@@ -13,14 +13,14 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="title">HEJ,PLOGGING</div>
+			<div class="title"><a href="mainPage.jsp">HEJ,PLOGGING</a></div>
 			<div class="search-wrapper">
 				<input type="text" placeholder="검색" class="textline">
 				<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" class ="img">
 			</div>
 			<div class="login-container">
 				<div class="login-mypage">
-					<a>마이페이지</a>
+					<a href="order.jsp">마이페이지</a>
 				</div>
 				<div class="login">
 					<a>로그인</a>
