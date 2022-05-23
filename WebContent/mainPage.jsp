@@ -18,11 +18,11 @@
         <div class="header_wrap">
             <!-- 타이틀 -->
             <div class="title_area">
-                <h2 class="title">
-                    <a href="main.html">
+                <div class="title">
+                    <a href="mainPage.jsp">
                         HEJ, PLOGGING
                     </a>
-                </h2>
+                </div>
             </div>
             <!-- 검색창 -->
             <div class="search_area">
@@ -33,6 +33,7 @@
             <div class="mypage_area">
                 <h3>
                     <!-- 마이페이지 -->
+                    <a href="order.jsp">마이페이지</a>
                 </h3>
             </div>
             <!-- 로그인 -->
@@ -55,19 +56,19 @@
         <!-- 작은 이미지 -->
         <div class="small_img_wrap">
             <div class="small_img" >
-                <a href="">
+                <a href="courseMain.jsp">
                     <img class="link_img" src="assets/img/mainPage/start.png" alt="">
                     <div>플로깅 시작하기</div>
                 </a>
             </div>
             <div class="small_img" >
-                <a href="">
+                <a href="diary.html">
                     <img class="link_img" src="assets/img/mainPage/review.png" alt="">
                     <div>후기 작성</div>
                 </a>
             </div>
             <div class="small_img" >
-                <a href="">
+                <a href="storeMain.jsp">
                     <img class="link_img" src="assets/img/mainPage/store.png" alt="">
                     <div>스토어</div>
                 </a>
@@ -96,15 +97,13 @@
                 </div>
                 <!-- 더보기 -->
                 <div class="title_detail">
-                    <a href="">
-                        더보기
-                    </a>
+                    <a href="courseMain.jsp">더보기</a>
                 </div>
             </div>
             <!-- 게시글사진, 설명 감싸기 -->
             <div class="list_start_picture_wrap">
                 <div class="start_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="courseSpecific.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -112,7 +111,7 @@
                     </a>
                 </div>
                 <div class="start_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="courseSpecific.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -120,7 +119,7 @@
                     </a>
                 </div>
                 <div class="start_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="courseSpecific.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -142,7 +141,7 @@
                 </div>
                 <!-- 더보기 -->
                 <div class="title_detail">
-                    <a href="">
+                    <a href="diary.html">
                         더보기
                     </a>
                 </div>
@@ -150,7 +149,7 @@
             <!-- 게시글사진, 설명 감싸기 -->
             <div class="list_review_picture_wrap">
                 <div class="review_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="diary.html">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -158,7 +157,7 @@
                     </a>
                 </div>
                 <div class="review_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="diary.html">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -166,7 +165,7 @@
                     </a>
                 </div>
                 <div class="review_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="diray.html">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -188,7 +187,7 @@
                 </div>
                 <!-- 더보기 -->
                 <div class="title_detail">
-                    <a href="">
+                    <a href="storeMain.jsp">
                         더보기
                     </a>
                 </div>
@@ -196,7 +195,7 @@
             <!-- 게시글사진, 설명 감싸기 -->
             <div class="list_store_picture_wrap">
                 <div class="store_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="storeSpecific.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -204,7 +203,7 @@
                     </a>
                 </div>
                 <div class="store_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="storeSpecific.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -212,7 +211,7 @@
                     </a>
                 </div>
                 <div class="store_picture_wrap">
-                    <a class ="post_img_wrap" href="">
+                    <a class ="post_img_wrap" href="storeSpecific.jsp">
                         <!-- 게시글 사진 -->
                         <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
@@ -299,7 +298,6 @@
             <div>광고문의 이용약관 개인정보취급 스토어입점신청</div>
             <div class="footer_last_2">Copyright 2022 Hejplogging All rights reserved</div>
         </div>
-        
     </footer>
 </body>
 </html>

@@ -1,6 +1,9 @@
 @charset "UTF-8";
+
 a {
     text-decoration: none;
+    link: "black";
+    vlink: "black";
 }
 
 a:visited{
@@ -24,21 +27,21 @@ header {
 
 .title_area {
     width: 30%;
-    margin-top: 1%;
+    margin-top: 3%;
     float: left;
     font-family: 'Jua', sans-serif;
     letter-spacing: 1px;
 }
 
-.title > a{
+.title{
+	font-size: 1.5em;
+    font-weight: bold;
     width: 100%;
     cursor: pointer;
-    min-width: 203px;
-    min-height: 24px;
 }
 
 .search_area {
-    width: 40%;
+    width: 45%;
     margin-top: 3%;
     float: left;
 }
@@ -58,18 +61,19 @@ input.search{
 }
 
 .mypage_area{
-    width: 10%;
+	width: 10%;float: left;
+    
     height: 99%;
-    margin-top: 1%;
+    margin-top: 2%;
     font-size: 0.8rem;
     letter-spacing: 1px;
     padding: 0px;
-}
+padding-left: 5%;}
 
 header .login_area {
     width: 10%;
     height: 99%;
-    margin-top: 1%;
+    margin-top: 2%;
     float: right;
     font-size: 0.8rem;
     letter-spacing: 1px;
