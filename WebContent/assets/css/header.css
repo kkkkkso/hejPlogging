@@ -1,4 +1,6 @@
-@charset "UTF-8";
+* {
+	font-family: 'Noto Sans', sans-serif;
+}
 
 a:link{
     text-decoration: none;
@@ -9,76 +11,80 @@ a:visited{
 	color: black;
     text-decoration:none;
 }
-div#wrap {
-    width: 1080px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-input.textline{
-	width:500px;
-	height:30px;
-	border-top:0px;
-	border-left:0px;
-	border-right:0px;
-}
-input.textline::placeholder{
-	padding-left:30px;
-}
-h1.title{
-	display:inline-block;
-}
-p.line{
-	display:inline-block;
-}
-div.search{
-	display:inline-block;
-	position:relative;
-	padding-left:90px;
-	
-}
-img.img{
-	position:absolute;
-	width:30px;
-	height:30px;
-	top:4px;
-	left:95px;
-}
-div.words{
-	padding:20px;
-	float:right;
-}
-ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+
+header {
+	text-align: center;
 }
 
-div.nav{
-	margin-top:50px;
-	text-align:center;
-	border-top:solid 1px;
-	border-bottom:solid 1px;
-	border-color:grey;
-}
-li.list {
-  display:inline-block;
+div.container {
+	text-align: center;
+	display: table;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 15px 15px;
 }
 
-button.navi{
-  display: block;
-  padding:20px;
-  background-color: white;
-  border:0px;
+div.title {
+	display: table-cell;
+	font-family: 'Jua', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    width: 250px;
+	word-break: keep-all;
+    letter-spacing: 1px;
 }
-button.button{
-	background-color:#6A8AF6;
-	border:solid 1px;
-	border-color:#6A8AF6;
+
+div.search-wrapper {
+	display: table-cell;
+	width: 100%;
+	text-align: center;
+    vertical-align: middle;
 }
-footer.footer{
-	text-align:center;
+
+div.search-wrapper input {
+	width: 80%;
+	border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }
-h1.words{
-	color:#FF9B9B
+
+div.search-wrapper img {
+    width: 13px;
+}
+
+div.login-container {
+	display: table-cell;
+	text-align: right;
+    vertical-align: middle;
+}
+
+div.login-mypage, div.login {
+	width: 100%;
+	display: table-cell;
+	padding-left: 20px;
+	word-break: keep-all;
+}
+
+nav.navbar {
+	border: 1px solid #eee;
+}
+
+nav.navbar ul {
+	margin: 0 0;
+	padding: 0 0;
+	display: inline-block;
+	cursor: pointer;
+	list-style: none;
+}
+
+nav.navbar li {
+	float: left;
+	padding: 4px 15px;
+}
+
+nav.navbar li > a {
+	font-size: 13px;
+	color: rgba(33, 33, 33, 0.7);
+	text-decoration: none;
 }
