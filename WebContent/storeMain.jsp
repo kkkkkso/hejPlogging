@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="assets/css/storeMain.css">
 </head>
 <body>
-	<jsp:include page="header.jsp"/>
+	<jsp:include page="headerWithNav.jsp"/>
 	<section>
 		<div class="inside">
 			<!-- 페이지 이름 -->
@@ -418,5 +418,6 @@
 			</div>
 		</div>
 	</section>
+	<jsp:include page="footer.jsp"/>
 </body>
 </html>

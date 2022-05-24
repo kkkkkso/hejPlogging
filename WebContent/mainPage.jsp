@@ -14,37 +14,7 @@
 </head>
 <body>
     <!-- 헤더 -->
-    <header class="header">
-        <div class="header_wrap">
-            <!-- 타이틀 -->
-            <div class="title_area">
-                <div class="title">
-                    <a href="mainPage.jsp">
-                        HEJ, PLOGGING
-                    </a>
-                </div>
-            </div>
-            <!-- 검색창 -->
-            <div class="search_area">
-                <img  class ="serach_img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
-                <input type="text" class="search" placeholder="검색">
-            </div>
-            <!-- 마이페이지 -->
-            <div class="mypage_area">
-                <div>
-                    <!-- 마이페이지 -->
-                    <a href="order.jsp">마이페이지</a>
-                </div>
-            </div>
-            <!-- 로그인 -->
-            <div class="login_area">
-                <div>
-                    	로그인
-                    <!-- 로그아웃 -->
-                </div>
-            </div>
-        </div>
-    </header>
+    	<jsp:include page="header.jsp"/>
     <!-- 광고, 빠른 이동, 이미지 -->
     <div class="navi_img">
         <!-- 큰 이미지 -->
@@ -268,37 +238,7 @@
         </div>
         <!-- 풋터 -->
     </div>
-    <div class="movebar">
-        <button class="button">
-            <h1 class="words">HEJ,PLOGGING START!</h1>
-        </button>
-    </div>
-    <footer class="footer">
-        <div class="footer_left_wrap">
-            <div class="info_wrap">
-                <div class="name">
-                    (주)웹개발1팀 대표: 한동석
-                </div>
-                <div class="number">
-                    사업자번호: 11111111
-                </div>
-                <div class="address">
-                    주소: 서울시 강남구
-                </div>
-                <div class="info">
-                    전화번호: 01000000000
-                </div>
-            </div>
-            <div class="footer_detail">
-                이 웹페이지는 클론코딩된 웹페이지입니다.
-            </div>
-    
-        </div>
-        <div class="footer_last">
-            <div>광고문의 이용약관 개인정보취급 스토어입점신청</div>
-            <div class="footer_last_2">Copyright 2022 Hejplogging All rights reserved</div>
-        </div>
-    </footer>
+	<jsp:include page="footer.jsp"/>
 </body>
 <script type="text/javascript" src="assets/js/mainPage.js"></script>
 </html>
