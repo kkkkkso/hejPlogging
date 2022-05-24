@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>플러깅 시작하기</title>
+	<title>플러깅 코스</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 		<div class="inside">
 			<!-- 페이지 이름 -->
 			<div class="page-name">
-				<h5><span><strong>플로깅 시작하기</strong></span></h5>
+				<h5><span><strong>플로깅 코스</strong></span></h5>
 				<span>어디까지 주워 봤니? 헤이,플러깅이 소개하는 전국의 모든 플러깅 코스</span>
 			</div>
 			<!-- hr -->

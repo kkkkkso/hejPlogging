@@ -198,7 +198,9 @@ div.product-detail {
 }
 
 div.product-name {
-	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 15px;
 	font-weight: normal;
 	cursor: pointer;
 }
@@ -208,16 +210,17 @@ div.product-name a {
 	text-decoration: none;
 }
 
-div.product-price {
-	font-size: 14px;
-	font-weight: bold;
+div.product-info {
+	font-size: 13px;
 	color: #000;
 	margin: 0 0 10px;
 }
 
-div.product-price p {
-	margin: 0 0;
+div.product-info div.flex-space {
+	display: flex;
+	justify-content: space-between;
 }
+
 /* 목록 끝 */
 
 nav.page {
