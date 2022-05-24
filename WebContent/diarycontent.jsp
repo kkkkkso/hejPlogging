@@ -5,31 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>diary info</title>
-<link rel="stylesheet" href="assets\css\header.css">
 <link rel="stylesheet" href="assets\css\diarycontent.css">
 </head>
 <body>
+	<jsp:include page="headerWithNav.jsp"/>
 	<div id="wrap">
-		<header class ="title">
-			<h1 class="title">HeJ,PLOGGING </h1>
-			<div class="search">
-				<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" class ="img" >
-				<input type="text" placeholder="검색" class="textline">
-			</div>
-		<div class ="words">
-			<p class ="line">마이페이지</p>
-			<p class ="line">로그아웃</p>
-		</div>	
-		</header>
 		<section>
-			<div class="nav">
-				<ul class="navbar">
-				  <li class="list"><button class="navi">플로깅 시작하기</button></li>
-				  <li class="list"><button class="navi">플로깅 다이어리</button></li>
-				  <li class="list"><button class="navi">플로깅 스토어</button></li>
-				  <li class="list"><button class="navi">플로깅 캠페인</button></li>
-				</ul>			
-			</div>
 			<div class ="textbox">
 				<h1 class="location">플로깅 다이어리</h1>
 				<p class="smallwords">플로깅 완료후 후기 작성하기</p>
