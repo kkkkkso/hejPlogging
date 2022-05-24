@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>campaign</title>
-<link rel="stylesheet" href="assets\css\header.css">
 <link rel="stylesheet" href="assets\css\diary.css">
 </head>
 <body>
