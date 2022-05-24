@@ -9,8 +9,8 @@
 	<title>스토어</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/storeMain.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/productMain.css">
 </head>
 <body>
 	<jsp:include page="headerWithNav.jsp"/>
@@ -25,14 +25,13 @@
 			<div class="hr-wrapper">
 				<hr>
 			</div>
+			<!-- 카테고리 -->
 			<div class="category-container">
-				
-				<!-- 카테고리 -->
 				<div class="category-name category-wrapper">
-					<span>카테고리</span>
+					<span>상품 분류</span>
 				</div>
 				<div class="category-list category-wrapper">
-					<ul>
+					<ul class="category">
 						<li class="category"><a href="">전체</a></li>
 						<li class="category"><a href="">욕실</a></li>
 						<li class="category"><a href="">주방</a></li>
