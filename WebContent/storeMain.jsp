@@ -9,8 +9,8 @@
 	<title>스토어</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/storeMain.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/productMain.css">
 </head>
 <body>
 	<jsp:include page="headerWithNav.jsp"/>
@@ -19,20 +19,19 @@
 			<!-- 페이지 이름 -->
 			<div class="page-name">
 				<h5><span><strong>스토어</strong></span></h5>
-				<span>플러깅으로 환경도 보호하고 제로웨이스트 상품도 구매하세요~!</span>
+				<span>플로깅으로 환경도 보호하고 제로웨이스트 상품도 구매하세요~!</span>
 			</div>
 			<!-- hr -->
 			<div class="hr-wrapper">
 				<hr>
 			</div>
+			<!-- 카테고리 -->
 			<div class="category-container">
-				
-				<!-- 카테고리 -->
 				<div class="category-name category-wrapper">
-					<span>카테고리</span>
+					<span>상품 분류</span>
 				</div>
 				<div class="category-list category-wrapper">
-					<ul>
+					<ul class="category">
 						<li class="category"><a href="">전체</a></li>
 						<li class="category"><a href="">욕실</a></li>
 						<li class="category"><a href="">주방</a></li>
@@ -76,8 +75,8 @@
 								<div class="product-name">
 									<a href="storeSpecific.jsp">[지구샵] 대나무칫솔</a>
 								</div>
-								<div class="product-price">
-									<p>3,800원</p>
+								<div class="product-info">
+									<strong class="product-price">3,800원</strong>
 								</div>
 							</div>
 						</div>
@@ -89,8 +88,8 @@
 								<div class="product-name">
 									<a href="">[에이비라이프] 개방형 실리콘빨대 (일반용)</a>
 								</div>
-								<div class="product-price">
-									<p>1,900원</p>
+								<div class="product-info">
+									<strong class="product-price">1,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -102,8 +101,8 @@
 								<div class="product-name">
 									<a href="">[샘크래프트] 오리진밤 (멀티밤)</a>
 								</div>
-								<div class="product-price">
-									<p>9,900원</p>
+								<div class="product-info">
+									<strong class="product-price">9,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -117,8 +116,8 @@
 								<div class="product-name">
 									<a href="">[지구샵] 대나무칫솔</a>
 								</div>
-								<div class="product-price">
-									<p>3,800원</p>
+								<div class="product-info">
+									<strong class="product-price">3,800원</strong>
 								</div>
 							</div>
 						</div>
@@ -130,8 +129,8 @@
 								<div class="product-name">
 									<a href="">[에이비라이프] 개방형 실리콘빨대 (일반용)</a>
 								</div>
-								<div class="product-price">
-									<p>1,900원</p>
+								<div class="product-info">
+									<strong class="product-price">1,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -143,8 +142,8 @@
 								<div class="product-name">
 									<a href="">[샘크래프트] 오리진밤 (멀티밤)</a>
 								</div>
-								<div class="product-price">
-									<p>9,900원</p>
+								<div class="product-info">
+									<strong class="product-price">9,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -158,8 +157,8 @@
 								<div class="product-name">
 									<a href="">[지구샵] 대나무칫솔</a>
 								</div>
-								<div class="product-price">
-									<p>3,800원</p>
+								<div class="product-info">
+									<strong class="product-price">3,800원</strong>
 								</div>
 							</div>
 						</div>
@@ -171,8 +170,8 @@
 								<div class="product-name">
 									<a href="">[에이비라이프] 개방형 실리콘빨대 (일반용)</a>
 								</div>
-								<div class="product-price">
-									<p>1,900원</p>
+								<div class="product-info">
+									<strong class="product-price">1,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -184,8 +183,8 @@
 								<div class="product-name">
 									<a href="">[샘크래프트] 오리진밤 (멀티밤)</a>
 								</div>
-								<div class="product-price">
-									<p>9,900원</p>
+								<div class="product-info">
+									<strong class="product-price">9,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -199,8 +198,8 @@
 								<div class="product-name">
 									<a href="">[지구샵] 대나무칫솔</a>
 								</div>
-								<div class="product-price">
-									<p>3,800원</p>
+								<div class="product-info">
+									<strong class="product-price">3,800원</strong>
 								</div>
 							</div>
 						</div>
@@ -212,8 +211,8 @@
 								<div class="product-name">
 									<a href="">[에이비라이프] 개방형 실리콘빨대 (일반용)</a>
 								</div>
-								<div class="product-price">
-									<p>1,900원</p>
+								<div class="product-info">
+									<strong class="product-price">1,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -225,8 +224,8 @@
 								<div class="product-name">
 									<a href="">[샘크래프트] 오리진밤 (멀티밤)</a>
 								</div>
-								<div class="product-price">
-									<p>9,900원</p>
+								<div class="product-info">
+									<strong class="product-price">9,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -243,8 +242,8 @@
 								<div class="product-name">
 									<a href="storeSpecific.html">[지구샵] 대나무칫솔</a>
 								</div>
-								<div class="product-price">
-									<p>3,800원</p>
+								<div class="product-info">
+									<strong class="product-price">3,800원</strong>
 								</div>
 							</div>
 						</div>
@@ -256,8 +255,8 @@
 								<div class="product-name">
 									<a href="">[에이비라이프] 개방형 실리콘빨대 (일반용)</a>
 								</div>
-								<div class="product-price">
-									<p>1,900원</p>
+								<div class="product-info">
+									<strong class="product-price">1,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -271,8 +270,8 @@
 								<div class="product-name">
 									<a href="">[샘크래프트] 오리진밤 (멀티밤)</a>
 								</div>
-								<div class="product-price">
-									<p>9,900원</p>
+								<div class="product-info">
+									<strong class="product-price">9,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -284,8 +283,8 @@
 								<div class="product-name">
 									<a href="">[지구샵] 대나무칫솔</a>
 								</div>
-								<div class="product-price">
-									<p>3,800원</p>
+								<div class="product-info">
+									<strong class="product-price">3,800원</strong>
 								</div>
 							</div>
 						</div>
@@ -299,8 +298,8 @@
 								<div class="product-name">
 									<a href="">[에이비라이프] 개방형 실리콘빨대 (일반용)</a>
 								</div>
-								<div class="product-price">
-									<p>1,900원</p>
+								<div class="product-info">
+									<strong class="product-price">1,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -312,8 +311,8 @@
 								<div class="product-name">
 									<a href="">[샘크래프트] 오리진밤 (멀티밤)</a>
 								</div>
-								<div class="product-price">
-									<p>9,900원</p>
+								<div class="product-info">
+									<strong class="product-price">9,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -327,8 +326,8 @@
 								<div class="product-name">
 									<a href="">[지구샵] 대나무칫솔</a>
 								</div>
-								<div class="product-price">
-									<p>3,800원</p>
+								<div class="product-info">
+									<strong class="product-price">3,800원</strong>
 								</div>
 							</div>
 						</div>
@@ -340,8 +339,8 @@
 								<div class="product-name">
 									<a href="">[에이비라이프] 개방형 실리콘빨대 (일반용)</a>
 								</div>
-								<div class="product-price">
-									<p>1,900원</p>
+								<div class="product-info">
+									<strong class="product-price">1,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -355,8 +354,8 @@
 								<div class="product-name">
 									<a href="">[샘크래프트] 오리진밤 (멀티밤)</a>
 								</div>
-								<div class="product-price">
-									<p>9,900원</p>
+								<div class="product-info">
+									<strong class="product-price">9,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -368,8 +367,8 @@
 								<div class="product-name">
 									<a href="">[지구샵] 대나무칫솔</a>
 								</div>
-								<div class="product-price">
-									<p>3,800원</p>
+								<div class="product-info">
+									<strong class="product-price">3,800원</strong>
 								</div>
 							</div>
 						</div>
@@ -383,8 +382,8 @@
 								<div class="product-name">
 									<a href="">[에이비라이프] 개방형 실리콘빨대 (일반용)</a>
 								</div>
-								<div class="product-price">
-									<p>1,900원</p>
+								<div class="product-info">
+									<strong class="product-price">1,900원</strong>
 								</div>
 							</div>
 						</div>
@@ -396,8 +395,8 @@
 								<div class="product-name">
 									<a href="">[샘크래프트] 오리진밤 (멀티밤)</a>
 								</div>
-								<div class="product-price">
-									<p>9,900원</p>
+								<div class="product-info">
+									<strong class="product-price">9,900원</strong>
 								</div>
 							</div>
 						</div>

@@ -1,0 +1,166 @@
+a:link, a:visited {
+    text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+body {
+	margin: 0px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	color: #212121;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+section {
+	display: flex;
+	background: #f3f3f3;
+	background-size: cover;
+}
+
+div.inside {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+div.order-form {
+	margin: 0 auto 100% auto;
+	padding:  0;
+	width: 861px;
+}
+
+h1 {
+    text-align: center;
+    margin: 60px;
+	font-size: 28px
+}
+
+div.left-container {
+	width: 520px;
+	float: left;
+}
+
+div.tip-off {
+	background: #fff;
+	border-color: rgba(33,33,33,0.1);
+	padding: 24px;
+    margin-bottom: 16px;
+}
+
+div.tip-off h6 {
+	margin: 0 0;
+	padding-bottom: 20px;
+	font-weight: bold;
+	color: #20252b;
+	font-size: 1.286em;
+    line-height: 1.4;	
+}
+
+div.order-product-wrapper {
+}
+
+div.order-thumb-list {
+	padding: 14px;
+    margin: 0;
+    border: 1px solid rgba(33, 33, 33, 0.15);
+}
+
+div.img-wrapper {
+	width: 104px;
+    display: table-cell;
+}
+
+div.img-wrapper img {
+	width: 80px;	
+	height: 80px;
+	border: 0;
+}
+
+div.product-info {
+	display: table-cell;
+    vertical-align: top;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+div.product-info span {
+	line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+div.product-price {
+	margin-top: 10px;
+}
+
+div.delivery-fee {
+	background: rgba(33, 33, 33, 0.03);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    border: 1px solid rgba(33, 33, 33, 0.15);
+    border-top: none;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+div.tip-off input, select {
+	box-sizing : border-box;
+	height: 36px;
+	border: 1px solid #ddd !important;
+    border-radius: 0;
+    padding: 0.5em 0.75em;
+    margin: 3px 0;
+}
+
+div.input-half {
+	display: flex;
+	justify-content: space-between;
+}
+
+div.input-half input {
+	width: 49%;
+}
+
+div.input-full input{
+	width: 100%;
+}
+
+div.right-container {
+	margin-left: 16px;
+    width: 325px;
+    float: left;
+}
+
+div.row, div.col, .left, .right {
+	width: 50%;
+	float: left;
+}
+
+div.order-total {
+	display: flex;
+	align-content: space-between;
+}
+
+div.col, .right {
+    text-align: right;
+}
+
+div.pay-way-wrapper input {
+    height: fit-content;
+    margin-right: 2px;
+}
+
+a.pay {
+	display: block;
+	box-sizing: border-box;
+	background-color: rgba(246, 7, 87, 0.75);
+    border-color: rgba(246, 7, 87, 0.75);
+    border-width: 1px;
+    color: #fff;
+    border-radius: 0;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-align: center;
+}

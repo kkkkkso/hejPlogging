@@ -28,7 +28,7 @@ div.inside {
 	padding: 0 15px;
 }
 
-div.goods-container {
+div.product-container {
 	padding-top: 14px;
 	margin: 0 -15px;
 }
@@ -42,19 +42,19 @@ div#wrap-1 {
 }
 
 /* display: flex > 반반 */
-div.goods-thumbs-wrapper, .goods-form-wrapper {
+div.product-thumbs-wrapper, .product-form-wrapper {
 	width: 50%;
 	padding: 0 15px;
 }
 
-div.goods-form {
+div.product-form {
 	padding-left: 15%;
 }
 
 /* 페이지 한 줄 0px ~ 991px */
 @media (max-width: 991px) {
 	
-	div.goods-container {
+	div.product-container {
 		padding-top: 14px;
 		padding: 15px;
 	}
@@ -68,14 +68,14 @@ div.goods-form {
 	}
 	
 	/* 반반이던 틀 한 줄로 */
-	div.goods-thumbs-wrapper, .goods-form-wrapper {
+	div.product-thumbs-wrapper, .product-form-wrapper {
 		width: 100%;
 		padding: 0 0;
 	}
 
-	/* 좌측 padding 0 */
-	div.goods-form {
+	div.product-form {
 		padding: 0;
+		margin-top: 20px;
 	}
 
 }
@@ -84,25 +84,25 @@ div.holder img {
 	width: 100%;
 }
 
-/* 상품명 및 가격 */
-div.goods-form header {
-	/* 상품명 하단 수평선 */
+/* 타이틀 및 가격 */
+div.product-form div.product-title-wrapper {
+	/* 타이틀 하단 수평선 */
 	border-color: rgba(33,33,33,0.1);
 	border-width: 0 0 1px 0;
 	border-style: solid;
 	margin: 0 0 24px;
 	padding-bottom: 24px;
 	line-height: normal;
+	position: relative;
 }
 
-div.goods-title {
+div.product-title {
 	font-weight: bold;
 	font-size: 1.3em;
 	margin-bottom: 0.3em;
 }
 
-div.goods-price {
-	position: relative;
+div.product-price {
 	color: #000000;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -110,21 +110,22 @@ div.goods-price {
 	vertical-align: middle;
 }
 
-div.goods-price img { /* 공유 이미지 */
+div.product-title-wrapper img { /* 공유 이미지 */
 	position: absolute;
-	right: 0;
+	right: 2px;
+	bottom: 10px;
 	width: 20px;
 	height: 20px;
 }
 
-div.goods-summary {
+div.product-summary {
 	height: 100px;
 	margin-bottom: 16px;
 }
-/* 상품명 및 가격 끝 */
+/* 타이틀 및 설명 끝 */
 
 /* 옵션 */
-div.goods-opt-group {
+div.product-opt-group {
 	padding-top: 12px;
 	margin-top: 12px;
 }
@@ -165,13 +166,13 @@ div.option-select a {
 /* 옵션 끝 */
 
 /* 구매 버튼 */
-div.goods-buy-wrapper {
+div.product-buy-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-div.goods-buy-wrapper a.btn {
+div.product-buy-wrapper a.btn {
 	width: 100%;
 	text-align: center;
 	font-size: 14px;
@@ -182,7 +183,7 @@ div.goods-buy-wrapper a.btn {
 	margin-left: 0;
 }
 
-div.goods-buy-wrapper a.internal-buy-btn {
+div.product-buy-wrapper a.internal-buy-btn {
 	background-color: rgba(246, 7, 87, 0.75);
 	border-color: rgba(246, 7, 87, 0.75);
 	border-width: 1px;
@@ -190,46 +191,13 @@ div.goods-buy-wrapper a.internal-buy-btn {
 	margin-right: 8px;
 }
 
-div.goods-buy-wrapper a.like-btn {
+div.product-buy-wrapper a.like-btn {
 	border-color: rgba(33,33,33,0.2);
 	background-color: rgba(149, 56, 56, 0);
 	border-radius: 0px;
 	color: #212121;
 	font-weight: bold;
 	font-style: normal;
-}
-
-div.npay-wrapper {
-	display: flex;
-	height: 50px;
-	width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	margin: 4px 0;
-}
-
-div.npay-wrapper a.external-buy-btn {
-	padding: 12px 0;
-	width: 100%;
-	border-color: #00c73c;
-	background-color: #00c73c;
-	background-position: center center;
-	border-width: 0px;
-}
-
-a.external-buy-btn img {
-	width: 98px;
-	height: 18px;
-}
-
-div.npay-wrapper a.dibs-btn {
-	padding: 12px 0;
-	width: 55px;
-	background-color: #fff;
-	border-color: #e5e5e5;
-	border: 1px solid #e5e5e5;
-	margin-left: 8px;
 }
 
 a.dibs-btn img {
@@ -239,7 +207,7 @@ a.dibs-btn img {
 /* 구매 버튼 끝 */
 
 /* 상세설명 */
-div.goods-detail-container {
+div.product-detail-container {
 	padding-top: 35px;
 }
 
@@ -253,21 +221,33 @@ hr {
 	border-top: 1px solid #eee;
 }
 
-div.goods-detail-wrapper {
+div.product-detail-wrapper {
 	padding-top: 35px;
 	text-align: center;
 }
 
-div.goods-detail {
+div.product-detail {
 	margin-top: 20px;
+	text-align: center;
 }
 
-div.goods-detail p {
-	margin: 0 0 10px;
+div.product-detail #map {
+	margin: 0 auto;
 }
 
-div.goods-detail img {
+div.product-img p, div.kakaomap {
+	margin: 5px 10px;
+}
+
+div.product-img img {
 	max-width: 100%;
-	margin: 5px auto;
+	width:75%;
+}
+
+@media (max-width: 991px) {
+	div.product-img img {
+		max-width: 100%;
+		width:75%;
+	}
 }
 /* 상세설명 끝 */

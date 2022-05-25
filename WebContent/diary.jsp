@@ -3,142 +3,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>diary</title>
-<link rel="stylesheet" href="assets\css\diary.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>플로깅 다이어리</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/productMain.css">
 </head>
-<jsp:include page="headerWithNav.jsp"/>
 <body>
-	<div id="wrap">
-		<section>
-			<div class ="textbox">
-				<h1 class="location">플로깅 다이어리</h1>
-				<p class="smallwords">플로깅 완료후 후기 작성하기</p>
+	<jsp:include page="headerWithNav.jsp"/>
+	<section>
+		<div class="inside">
+			<!-- 페이지 이름 -->
+			<div class="page-name">
+				<h5><span><strong class="product-price">플로깅 다이어리</strong></span></h5>
+				<span>환경을 사랑하는 우리, 플로깅 공유하기</span>
 			</div>
-			<div id="diarycontainer">
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
-					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
+			<div class="product-container">
+				<!-- hr -->
+				<div class="hr-wrapper">
+					<hr>
 				</div>
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
+				<!-- 3칸 목록 -->
+				<div class="product-list-container" id="wrap-3">
+					<div class="row">
+						<div class="col">
+							<div class="product-img-wrapper">
+								<a href="diarycontent.jsp"><img src="assets/img/diary/diary1.png"></a>
+							</div>
+							<div class="product-detail">
+								<div class="product-name">
+									<a href="diarycontent.jsp">게시글 제목</a>
+									<span class="like">♡</span>
+								</div>
+								<div class="product-info">
+									<span class="writer">작성자</span>
+									<div class="flex-space">
+										<span class="date">2022-05-21</span>
+										<span class="hits">조회 23</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="product-img-wrapper">
+								<a href="diarycontent.jsp"><img src="assets/img/diary/diary2.png"></a>
+							</div>
+							<div class="product-detail">
+								<div class="product-name">
+									<a href="diarycontent.jsp">게시글 제목</a>
+									<span class="like">♡</span>
+								</div>
+								<div class="product-info">
+									<span class="writer">작성자</span>
+									<div class="flex-space">
+										<span class="date">2022-05-21</span>
+										<span class="hits">조회 23</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="product-img-wrapper">
+								<a href="diarycontent.jsp"><img src="assets/img/diary/diary3.png"></a>
+							</div>
+							<div class="product-detail">
+								<div class="product-name">
+									<a href="diarycontent.jsp">게시글 제목</a>
+									<span class="like">♡</span>
+								</div>
+								<div class="product-info">
+									<span class="writer">작성자</span>
+									<div class="flex-space">
+										<span class="date">2022-05-21</span>
+										<span class="hits">조회 23</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
 				</div>
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
+				<!-- 2칸 목록 -->
+				<div class="product-list-container" id="wrap-2">
+					<div class="row">
 					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
 				</div>
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
-					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
-				</div>
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
-					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
-				</div>
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
-					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
-				</div>
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
-					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
-				</div>
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
-					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
-				</div>
-				<div class = "card">
-					<!-- 여기는 img 썸네일 -->
-					<div class="thumbnail">
-						<h3>게시글 사진</h3>
-					</div>
-					<div>
-						<p class="place">글제목</p>
-						<div class="place">하트</div>
-					</div>
-						
-					<p class="position">작성자</p>
-					<p class="position">2022-05-22 조회23</p>
-				</div>
-				<div class="pagination"> < 1 2 3 4 5 ></div>
+				<!-- 쪽넘김 -->
+				<nav class="page">
+					<ul class="page">
+						<li class="page"><a href="">&lt</a></li>
+						<li class="page"><a href="">1</a></li>
+						<li class="page"><a href="">2</a></li>
+						<li class="page"><a href="">3</a></li>
+						<li class="page"><a href="">4</a></li>
+						<li class="page"><a href="">5</a></li>
+						<li class="page"><a href="">&gt</a></li>
+					</ul>
+				</nav>
 			</div>
-		</section>
-		<footer class="footer">
-			<button class="button"><h1 class="words">HEJ,PLOGGING START!</h1></button>
-		</footer>
-	</div>
+		</div>
+	</section>
+	<jsp:include page="footer.jsp"/>
 </body>
 </html>
