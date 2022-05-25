@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+
 .modal {
   position: fixed;
   top: 0;
@@ -32,7 +33,12 @@
 }
 
 
-
+body{
+    font-family: 'Noto Sans', sans-serif;
+    width:320px;
+    height:500x;
+    padding: 32px 24px 24px;
+  }
 
 
 

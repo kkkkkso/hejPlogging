@@ -16,12 +16,12 @@ const open = () => {
 //로그인버튼
   $("a.openBtn").click(function(e){
       e.preventDefault();
+      $("#login_view_").show();
       $("div.choice_view").hide();
       $("div.find_idpw_veiw").hide();
       $("div.non_member_view").hide();
       $("div.agree_veiw").hide();
       $("div.join_view").hide();
-      $("#login_view_").show();
   })
 //회원가입버튼
   $("a#choice_btn").click(function(e){
@@ -64,6 +64,8 @@ function selectAll(selectAll)  {
       checkbox.checked = selectAll.checked;
     })
   }
+  
+
   
 
   
