@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="assets/css/productMain.css">
 </head>
 <body>
-	<jsp:include page="headerWithNav.jsp"/>
+	<jsp:include page="header.jsp"/>
+	<jsp:include page="Nav.jsp"/>
 	<section>
 		<div class="inside">
 			<!-- 페이지 이름 -->

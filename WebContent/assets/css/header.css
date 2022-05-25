@@ -64,6 +64,7 @@ div.login-mypage, div.login {
 	display: table-cell;
 	padding-left: 20px;
 	word-break: keep-all;
+	cursor: pointer;
 }
 
 nav.navbar {

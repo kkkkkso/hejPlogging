@@ -14,6 +14,7 @@
 </head>
 <body>
 	<jsp:include page="header.jsp"/>
+	<jsp:include page="Nav.jsp"/>
 	<section>
 		<div class="inside">
 			<div class="order-form">
