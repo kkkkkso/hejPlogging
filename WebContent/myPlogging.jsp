@@ -6,22 +6,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mypage</title>
+    <title>myPlogging</title>
     <link rel="stylesheet" href="assets/css/myPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/mainPage/titleLogo.png" type="image/x-icon">    
 </head>
 <body>
 	<jsp:include page="header.jsp"/>
 	<jsp:include page="Nav.jsp"/>
     <div class="page_wrap">
         <div class="menu_wrap">
-            <div class="menu order"><a href="order.jsp"></a>주문내역</div>
-            <div class="menu interest"><a href="interest.jsp">관심상품</a></div>
-            <div class="menu point"><a href="point.jsp">포인트조회</a></div>
-            <div class="menu plogging"><a href="myPlogging.jsp">진행 중인 플로깅</a></div>
-            <div class="menu info">정보수정</div>
+            <div class="menu"><a class="order" class="order" href="order.jsp">주문내역</a></div>
+            <div class="menu"><a class="interest" href="interest.jsp">관심상품</a></div>
+            <div class="menu"><a class="point" href="point.jsp">포인트조회</a></div>
+            <div class="menu"><a class="myPlogging" href="myPlogging.jsp">진행 중인 플로깅</a></div>
+            <div class="menu">정보수정</div>
         </div>
         <div class="myinfo_wrap">
             <div class="myface_wrap">
@@ -41,5 +42,6 @@
             </div>
         </div>
     </div>
+    	<jsp:include page="footer.jsp"/>
 </body>
 </html>
