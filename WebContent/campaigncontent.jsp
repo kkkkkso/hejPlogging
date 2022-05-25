@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="assets/css/campaigncontent.css">
 </head>
 <body>
-	<jsp:include page="headerWithNav.jsp"/>
+	<jsp:include page="header.jsp"/>
+	<jsp:include page="Nav.jsp"/>
 	<section>
 		<div class="inside">
 			<!-- 두 줄: min-width 992px -->

@@ -15,12 +15,13 @@
 <body>
     <!-- 헤더 -->
     	<jsp:include page="header.jsp"/>
+    	<jsp:include page="Nav.jsp"/>
     <!-- 광고, 빠른 이동, 이미지 -->
     <div class="navi_img">
         <!-- 큰 이미지 -->
         <div class="title_img_wrap">
             <a href="">
-                <img src="https://www.mstoday.co.kr/news/photo/202111/76453_59423_406.png" alt="이미지를 표시할 수 없습니다">
+                <img class="title_img" src="assets/img/mainPage/titleLogo.png" alt="이미지를 표시할 수 없습니다">
             </a>
         </div>
         <!-- 작은 이미지 -->
@@ -121,7 +122,7 @@
                 <div class="review_picture_wrap">
                     <a class ="post_img_wrap" href="diarycontent.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/mainPage/campaign1.jpg" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -129,7 +130,7 @@
                 <div class="review_picture_wrap">
                     <a class ="post_img_wrap" href="diarycontent.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/course/yangjaecheon.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -137,7 +138,7 @@
                 <div class="review_picture_wrap">
                     <a class ="post_img_wrap" href="diraycontent.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/course/seongdangmot.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -213,7 +214,7 @@
                 <div class="campaign_picture_wrap">
                     <a class ="post_img_wrap" href="campaigncontent.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/mainPage/campaign1.jpg" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -221,7 +222,7 @@
                 <div class="campaign_picture_wrap">
                     <a class ="post_img_wrap" href="campaigncontent.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/mainPage/campaign2.jpg" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>
@@ -229,7 +230,7 @@
                 <div class="campaign_picture_wrap">
                     <a class ="post_img_wrap" href="campaigncontent.jsp">
                         <!-- 게시글 사진 -->
-                        <img class="post_img" src="assets/img/mainPage/sample.png" alt="게시물 사진">
+                        <img class="post_img" src="assets/img/mainPage/titleLogo.png" alt="게시물 사진">
                         <!-- 사진 설명 -->
                         <div class="picture_explain">게시글 설명</div>
                     </a>

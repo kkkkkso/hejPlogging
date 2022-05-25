@@ -13,6 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
 <body>
+	<jsp:include page="header.jsp"/>
+	<jsp:include page="Nav.jsp"/>
     <div class="page_wrap">
         <div class="menu_wrap">
             <div class="menu order"><a href="order.jsp"></a>주문내역</div>

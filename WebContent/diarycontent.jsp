@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="assets\css\diarycontent.css">
 </head>
 <body>
-	<jsp:include page="headerWithNav.jsp"/>
+	<jsp:include page="header.jsp"/>
+	<jsp:include page="Nav.jsp"/>
 	<div id="wrap">
 		<section>
 			<div class ="textbox">
