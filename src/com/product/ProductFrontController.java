@@ -1,4 +1,4 @@
-package com.user;
+package com.product;
 
 import java.io.IOException;
 
@@ -8,10 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.user.UserJoinOk;
 import com.user.action.ActionInfo;
 
-public class UserFrontController extends HttpServlet {
+public class ProductFrontController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,12 +27,12 @@ public class UserFrontController extends HttpServlet {
 		String command = requestURL.substring(requestURL.lastIndexOf("/") + 1);
 		ActionInfo actionInfo = null;
 		
-		if(command.equals(".us")) {
-			actionInfo = new UserJoinOk().execute(req, resp);
+		if(command.equals(".pd")) {
+//			actionInfo = new ().execute(req, resp);
 		} else if(command.equals("")) {
 			actionInfo = new ActionInfo();
 			actionInfo.setRedirect(true); 
-			actionInfo.setPath(req.getContextPath() + "/join.jsp");
+			actionInfo.setPath(req.getContextPath() + "/.jsp");
 		}  else {
 			// 404 일 때 출력할 에러 페이지 경로 작성
 		}
