@@ -17,4 +17,4 @@ public class RecordDAO {
    public void join(RecordVO RecordVO) {
       sqlSession.insert("Record.join", RecordVO);
    }
-   
+}

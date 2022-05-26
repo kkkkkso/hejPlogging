@@ -17,4 +17,5 @@ public class OrderDAO {
    public void join(OrderVO orderVO) {
       sqlSession.insert("Campaign.join", orderVO);
    }
+}
    

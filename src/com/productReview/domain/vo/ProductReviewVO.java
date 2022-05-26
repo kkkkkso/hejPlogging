@@ -1,11 +1,11 @@
 package com.productReview.domain.vo;
 
-public class ProudctReviewVO {
+public class ProductReviewVO {
 	private String productNumber;
 	private String reviewDetail;
 	private int userReviewNumber;
 	
-	public ProudctReviewVO() {;}
+	public ProductReviewVO() {;}
 
 	public String getProductNumber() {
 		return productNumber;

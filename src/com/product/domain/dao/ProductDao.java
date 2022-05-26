@@ -17,4 +17,4 @@ public class ProductDAO {
    public void join(ProductVO productVO) {
       sqlSession.insert("Product.join", productVO);
    }
-   
+}

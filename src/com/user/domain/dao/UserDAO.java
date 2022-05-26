@@ -17,4 +17,4 @@ public class UserDAO {
    public void join(UserVO userVO) {
       sqlSession.insert("User.join", userVO);
    }
-   
+}
