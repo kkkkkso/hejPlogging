@@ -19,20 +19,18 @@ public class UserJoinOk implements Action {
 		UserVO userVO = new UserVO();
 		UserDAO userDAO = new UserDAO();
 		
-		UserVO.setUserId(req.getParameter("userId"));
-		UserVO.setUserPw(req.getParameter("userPw"));
-		UserVO.setUserName(req.getParameter("userName"));
-		UserVO.setUserPhonenumber(req.getParameter("userPhonenumber"));
-		UserVO.setUserGender(req.getParameter("userGender"));
-		UserVO.setUserBirth(req.getParameter("userBirth"));
-		UserVO.setUserImg(req.getParameter("userImg"));
-		UserVO.setUserPoint(req.getParameter("userPoint"));
-		UserVO.setUserName(req.getParameter("userName"));
-		UserVO.setUserEmail(req.getParameter("userEmail"));
+		userVO.setUserId(req.getParameter("userId"));
+		userVO.setUserPw(req.getParameter("userPw"));
+		userVO.setUserName(req.getParameter("userName"));
+		userVO.setUserPhonenumber(req.getParameter("userPhonenumber"));
+		userVO.setUserGender(req.getParameter("userGender"));
+		userVO.setUserBirth(req.getParameter("userBirth"));
+		userVO.setUserImg(req.getParameter("userImg"));
+		userVO.setUserEmail(req.getParameter("userEmail"));
 
 		userDAO.join(userVO);
 		
-		req.setAttribute("UserName", UserVO.getUserName());
+		req.setAttribute("UserName", userVO.getUserName());
 		
 		actionInfo.setRedirect(false);
 //		actionInfo.setPath("/joinSuccess.jsp");
