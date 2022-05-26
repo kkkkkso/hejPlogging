@@ -1,6 +1,7 @@
 package com.course.domain.dao;
 
 import org.apache.ibatis.session.SqlSession;
+
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import com.course.domain.vo.CourseVO;
