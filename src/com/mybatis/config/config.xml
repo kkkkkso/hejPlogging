@@ -26,6 +26,13 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="com/mybatis/mapper/PloggingMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/CampaignMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/CourseMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/OrderMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/ProductMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/ProductReviewMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/RecordMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/ReviewMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/UserMapper.xml"/>
 	</mappers>
 </configuration>

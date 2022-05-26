@@ -20,4 +20,3 @@ public class CourseDAO {
       sqlSession.insert("Course.join", courseVO);
    }
 }
-   
