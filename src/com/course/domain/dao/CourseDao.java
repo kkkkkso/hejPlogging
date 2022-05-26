@@ -18,4 +18,5 @@ public class CourseDAO {
    public void join(CourseVO courseVO) {
       sqlSession.insert("Course.join", courseVO);
    }
+}
    

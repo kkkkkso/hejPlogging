@@ -17,4 +17,4 @@ public class ProductReviewDAO {
    public void join(ProductReviewVO productReviewVO) {
       sqlSession.insert("ProductReview.join", productReviewVO);
    }
-   
+}

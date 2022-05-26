@@ -1,9 +1,10 @@
-package com.Campaign.domain.dao;
+package com.campagin.domain.dao;
 
 import org.apache.ibatis.session.SqlSession;
+
 import org.apache.ibatis.session.SqlSessionFactory;
 
-import com.campaign.domain.vo.CampaginVO;
+import com.campagin.domain.vo.CampaignVO;
 import com.mybatis.config.MyBatisConfig;
 
 public class CampaignDAO {
@@ -18,4 +19,4 @@ public class CampaignDAO {
    public void join(CampaignVO campaignVO) {
       sqlSession.insert("Campaign.join", campaignVO);
    }
-   
+}

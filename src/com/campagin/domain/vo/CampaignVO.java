@@ -1,7 +1,7 @@
 package com.campagin.domain.vo;
 
 
-public class CampaginVO {
+public class CampaignVO {
 
 	private int campaignNumber;
 	private String campaignName; 
@@ -10,7 +10,7 @@ public class CampaginVO {
 	private String campaignImgDetail; 
 	private String campaignLink ;
 	
-	public CampaginVO() {;}
+	public CampaignVO() {;}
 
 	public int getCampaignNumber() {
 		return campaignNumber;
