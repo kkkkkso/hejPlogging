@@ -481,15 +481,6 @@
 			</div>
 		</div>
 	</div>
-		<nav class="navbar">
-			<ul class="navbar">
-				<li class="navbar"><a href="courseMain.jsp">플로깅 코스</a></li>
-				<li class="navbar"><a href="diary.jsp">플로깅 다이어리</a></li>
-				<li class="navbar"><a href="storeMain.jsp">스토어</a></li>
-				<!-- 링크 기입 후 주석 삭제 요망 -->
-				<li class="navbar"><a href="">플로깅 캠페인</a></li>
-			</ul>			
-		</nav>
 	</header>
 </body>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 

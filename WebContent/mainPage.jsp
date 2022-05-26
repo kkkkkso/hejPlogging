@@ -45,7 +45,7 @@
                 </a>
             </div>
             <div class="small_img" >
-                <a href="">
+                <a href="campaign.jsp">
                     <img class="link_img" src="assets/img/mainPage/campaign.png" alt="">
                     <div>플로깅 캠페인</div>
                 </a>
