@@ -1,4 +1,4 @@
-package com.campagin.action;
+package com.campaign.action;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.campagin.domain.vo;
+package com.campaign.domain.vo;
 
 
 public class CampaignVO {

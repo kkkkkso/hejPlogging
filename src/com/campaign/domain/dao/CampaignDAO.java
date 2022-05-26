@@ -1,10 +1,10 @@
-package com.campagin.domain.dao;
+package com.campaign.domain.dao;
 
 import org.apache.ibatis.session.SqlSession;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 
-import com.campagin.domain.vo.CampaignVO;
+import com.campaign.domain.vo.CampaignVO;
 import com.mybatis.config.MyBatisConfig;
 
 public class CampaignDAO {

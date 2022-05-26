@@ -1,4 +1,4 @@
-package com.campagin.action;
+package com.campaign.action;
 
 public class ActionInfo {
 	private boolean isRedirect;
