@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http//mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Member">
+	<!-- 회원가입 -->
+	 <!-- 메소드이름  join-->
+	<insert id="join" parameterType="userVO">
+		insert into plogging.tbl_user
+		(user_id, user_pw, user_name, user_phonenumber, user_gender, user_birth, user_img, user_point, user_email)
+		VALUES(#{userId}, #{userPw}, #{userName}, #{userPhonenumber}, #{userGender}, #{userBirth}, #{userImg}, #{userPoint}, #{userEmail})
+	</insert>
+	
+	<select id="" parameterType="courseVO">
+		select from plogging.tbl_course  
+		(course_number, course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start, course_end)
+		VALUES(#{courseNumber}, #{courseName}, #{courseDetail}, #{courseImgTitle}, #{courseImgDetail}, #{courseDifficulty}, #{courseStart}, #{courseEnd})
+	</select>
+	
+	<select id="" parameterType="productVO">
+		select from plogging.tbl_product  
+		(product_number, product_name, product_detail, product_price, product_color, product_size, product_category, product_popularity, product_review_numbers, product_inventory_total, product_inventory_sold)
+		VALUES(#{productNumber}, #{productName}, #{productDetail}, #{productPrice}, #{productColor}, #{productSize} #{productCategory}, #{productPopularity}, #{productReveiwNumbers}, #{productInventoryTotal}, #{productInventorySold})
+	</select>
+	
+	<select id="" parameterType="orderVO">
+		select from plogging.tbl_order 
+		(user_id, product_number, order_date)
+		VALUES(#{userId}, #{productNumber}, #{orderDate})
+	</select>
+	
+	<select id="" parameterType="productReviewVO">
+		select from plogging.tbl_product_review
+		(user_id, product_number, review_detail, user_review_number)
+		VALUES(#{userId}, #{productNumber}, #{reviewDetail}, #{userReviewNumber})
+	</select>
+	
+	<select id="" parameterType="recordVO">
+		select from plogging.tbl_record
+		(record_number, course_number, user_id)
+		VALUES(#{recordNumber}, #{courseNumber}, #{userId})
+	</select>
+	
+	<select id="" parameterType="reviewVO">
+		select from plogging.tbl_review
+		(review_number, course_number, user_id, review_content)
+		VALUES(#{reviewNumber}, #{courseNumber}, #{userId}, #{reviewContent})
+	</select>
+	
+	<select id="" parameterType="campaignVO">
+		select from plogging.tbl_campaign
+		(campaign_number, campaign_name, campaign_detail, campaign_img_title, campaign_img_detail, campaign_link)
+		VALUES(#{campaignNumber}, #{campaignName}, #{campaignDetail}, #{campaignImgTitle}, #{campaignImgDetail}, #{campaignLink})
+	</select>
+</mapper>
