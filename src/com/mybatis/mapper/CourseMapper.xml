@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http//mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Member">
-	<select id="" parameterType="courseVO">
-		select from plogging.tbl_course  
-		(course_number, course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start, course_end)
-		VALUES(#{courseNumber}, #{courseName}, #{courseDetail}, #{courseImgTitle}, #{courseImgDetail}, #{courseDifficulty}, #{courseStart}, #{courseEnd})
-	</select>
 </mapper>

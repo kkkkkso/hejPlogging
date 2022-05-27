@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http//mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Member">
-	<select id="" parameterType="productVO">
-		select from plogging.tbl_product  
-		(product_number, product_name, product_detail, product_price, product_color, product_size, product_category, product_popularity, product_review_numbers, product_inventory_total, product_inventory_sold)
-		VALUES(#{productNumber}, #{productName}, #{productDetail}, #{productPrice}, #{productColor}, #{productSize} #{productCategory}, #{productPopularity}, #{productReveiwNumbers}, #{productInventoryTotal}, #{productInventorySold})
-	</select>
 </mapper>
