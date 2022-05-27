@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http//mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Member">
-	<insert id="join" parameterType="userVO">
-		insert into plogging.tbl_user
-		(user_id, user_pw, user_name, user_phonenumber, user_gender, user_birth, user_img, user_point, user_email)
-		VALUES(#{userId}, #{userPw}, #{userName}, #{userPhonenumber}, #{userGender}, #{userBirth}, #{userImg}, #{userPoint}, #{userEmail})
-	</insert>
 </mapper>
