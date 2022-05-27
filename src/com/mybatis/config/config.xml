@@ -2,6 +2,9 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+   <settings>
+      <setting name="mapUnderscoreToCamelCase" value="true"/>
+   </settings>
 	<typeAliases>
 		<typeAlias type="com.campaign.domain.vo.CampaignVO" alias="campaignVO"/>
 		<typeAlias type="com.course.domain.vo.CourseVO" alias="courseVO"/>
