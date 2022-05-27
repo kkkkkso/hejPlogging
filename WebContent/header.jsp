@@ -413,7 +413,7 @@
 					<!-- 가입하기/취소버튼 -->
 					<div class="join_cancle_button">
 						<button type="button" style="color: black;">취소</button>
-						<button type="button">가입하기</button>
+						<button type="button" id="real_join">가입하기</button>
 					</div>
 				</form>
 			</div>
@@ -468,7 +468,7 @@
 										<span>연락처</span>
 										<input type="tel" placeholder="연락처" name="user_phonenum">
 									</div>
-									<div id=""user_birth>
+									<div id="user_birth">
 										<span>생년월일</span>
 									</div>
 								</div>

@@ -48,10 +48,10 @@ const open = () => {
       $("div.agree_veiw").show();
   })
   //가입하기버튼
-  $("#join_btn").click(function(e){
+  $("#real_join").click(function(e){
       e.preventDefault();
-      $("div.choice_view").hide();
-      $("div.agree_veiw").show();
+      $("div.agree_veiw").hide();
+      $("div#join_view").show();
   })
   
 //전체동의

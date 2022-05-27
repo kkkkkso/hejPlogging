@@ -9,6 +9,10 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+<<<<<<< HEAD
+  
+
+=======
   	<servlet>
 		<servlet-name>CampaignFrontController</servlet-name>
 		<servlet-class>com.campaign.CampaignFrontController</servlet-class>
@@ -80,4 +84,5 @@
 		<servlet-name>UserFrontController</servlet-name>
 		<url-pattern>*.us</url-pattern>
 	</servlet-mapping>
+>>>>>>> 194df4a5321adb693c6f89ad2bff5746f7244b2d
 </web-app>
