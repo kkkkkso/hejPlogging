@@ -18,7 +18,7 @@
 		<servlet-class>com.campaign.CampaignFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>CampaignController</servlet-name>
+		<servlet-name>CampaignFrontController</servlet-name>
 		<url-pattern>*.cp</url-pattern>
 	</servlet-mapping>
 	
