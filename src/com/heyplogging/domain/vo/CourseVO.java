@@ -1,4 +1,4 @@
-package com.course.domain.vo;
+package com.heyplogging.domain.vo;
 
 public class CourseVO {
 	private int courseNumber;

@@ -1,4 +1,4 @@
-package com.user.domain.vo;
+package com.heyplogging.domain.vo;
 
 public class UserVO {
 	

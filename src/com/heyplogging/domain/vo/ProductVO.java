@@ -1,4 +1,4 @@
-package com.product.domain.vo;
+package com.heyplogging.domain.vo;
 
 public class ProductVO {
 	private int productNumber;

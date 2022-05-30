@@ -1,4 +1,4 @@
-package com.record.domain.vo;
+package com.heyplogging.domain.vo;
 
 public class RecordVO {
 	private int recordNumber;

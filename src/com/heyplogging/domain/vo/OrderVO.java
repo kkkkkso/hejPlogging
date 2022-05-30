@@ -1,4 +1,4 @@
-package com.order.domain.vo;
+package com.heyplogging.domain.vo;
 
 public class OrderVO {
 	private int orderNumber;

@@ -1,4 +1,4 @@
-package com.review.domain.vo;
+package com.heyplogging.domain.vo;
 
 public class ReviewVO {
 	private int reviewNumber;
