@@ -5,10 +5,12 @@ public class CourseVO {
 	private String courseName;
 	private String courseDetail;
 	private String courseImgTitle; 
-	private String couftseImgDetail; 
+	private String courseImgDetail; 
 	private String courseDifficulty; 
 	private String courseStart; 
+	private String courseStartDetail; 
 	private String courseEnd;
+	private String courseEndDetail; 
 	
 	public CourseVO() {;}
 
@@ -44,12 +46,12 @@ public class CourseVO {
 		this.courseImgTitle = courseImgTitle;
 	}
 
-	public String getCouftseImgDetail() {
-		return couftseImgDetail;
+	public String getCourseImgDetail() {
+		return courseImgDetail;
 	}
 
-	public void setCouftseImgDetail(String couftseImgDetail) {
-		this.couftseImgDetail = couftseImgDetail;
+	public void setCourseImgDetail(String courseImgDetail) {
+		this.courseImgDetail = courseImgDetail;
 	}
 
 	public String getCourseDifficulty() {
@@ -74,6 +76,22 @@ public class CourseVO {
 
 	public void setCourseEnd(String courseEnd) {
 		this.courseEnd = courseEnd;
+	}
+
+	public String getCourseStartDetail() {
+		return courseStartDetail;
+	}
+
+	public void setCourseStartDetail(String courseStartDetail) {
+		this.courseStartDetail = courseStartDetail;
+	}
+
+	public String getCourseEndDetail() {
+		return courseEndDetail;
+	}
+
+	public void setCourseEndDetail(String courseEndDetail) {
+		this.courseEndDetail = courseEndDetail;
 	}
 }
 
