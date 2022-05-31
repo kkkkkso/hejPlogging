@@ -15,4 +15,11 @@ public class CourseDAO {
    public CourseDAO() {
       sqlSession = sqlSessionFactory.openSession(true);
    }
+
+//코스 db 추가
+public void join(CourseVO courseVO) {
+	sqlSession.insert("Course.join", courseVO);
+}
+
+
 }
