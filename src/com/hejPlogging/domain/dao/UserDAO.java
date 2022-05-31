@@ -1,5 +1,7 @@
 package com.hejPlogging.domain.dao;
 
+import java.util.HashMap;
+
 import org.apache.ibatis.session.SqlSession;
 
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -14,8 +16,14 @@ public class UserDAO {
    public UserDAO() {
       sqlSession = sqlSessionFactory.openSession(true);
    }
-   
-   public void join(UserVO userVO) {
-      sqlSession.insert("User.join", userVO);
-   }
+
+	//회원가입
+	public void join(UserVO userVO) {
+		sqlSession.insert("User.join", userVO);
+	}
+	
+	// 로그인
+	public Integer login(HashMap<String, String> userMap) {
+		return sqlSession.selectOne("User.login", userMap);
+	}
 }
