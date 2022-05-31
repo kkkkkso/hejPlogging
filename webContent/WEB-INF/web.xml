@@ -9,13 +9,13 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
   
 
-=======
+<!-- ======= -->
   	<servlet>
 		<servlet-name>CampaignFrontController</servlet-name>
-		<servlet-class>com.campaign.CampaignFrontController</servlet-class>
+		<servlet-class>com.hejPlogging.CampaignFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>CampaignFrontController</servlet-name>
@@ -24,7 +24,7 @@
 	
 	<servlet>
 		<servlet-name>CourseFrontController</servlet-name>
-		<servlet-class>com.course.CourseFrontController</servlet-class>
+		<servlet-class>com.hejPlogging.CourseFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>CourseFrontController</servlet-name>
@@ -33,7 +33,7 @@
 	
 	<servlet>
 		<servlet-name>OrderFrontController</servlet-name>
-		<servlet-class>com.order.OrderFrontController</servlet-class>
+		<servlet-class>com.hejPlogging.OrderFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>OrderFrontController</servlet-name>
@@ -42,7 +42,7 @@
 	
 	<servlet>
 		<servlet-name>ProductFrontController</servlet-name>
-		<servlet-class>com.product.ProductFrontController</servlet-class>
+		<servlet-class>com.hejPlogging.ProductFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ProductFrontController</servlet-name>
@@ -51,7 +51,7 @@
 	
 	<servlet>
 		<servlet-name>ProductReviewFrontController</servlet-name>
-		<servlet-class>com.productReview.ProductReviewFrontController</servlet-class>
+		<servlet-class>com.hejPlogging.ProductReviewFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ProductReviewFrontController</servlet-name>
@@ -60,7 +60,7 @@
 	
 	<servlet>
 		<servlet-name>RecordFrontController</servlet-name>
-		<servlet-class>com.record.RecordFrontController</servlet-class>
+		<servlet-class>com.hejPlogging.RecordFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>RecordFrontController</servlet-name>
@@ -69,7 +69,7 @@
 	
 	<servlet>
 		<servlet-name>ReviewFrontController</servlet-name>
-		<servlet-class>com.review.ReviewFrontController</servlet-class>
+		<servlet-class>com.hejPlogging.ReviewFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ReviewFrontController</servlet-name>
@@ -78,11 +78,11 @@
 	
 	<servlet>
 		<servlet-name>UserFrontController</servlet-name>
-		<servlet-class>com.user.UserFrontController</servlet-class>
+		<servlet-class>com.hejPlogging.UserFrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>UserFrontController</servlet-name>
 		<url-pattern>*.us</url-pattern>
 	</servlet-mapping>
->>>>>>> 194df4a5321adb693c6f89ad2bff5746f7244b2d
+<!-- >>>>>>> 194df4a5321adb693c6f89ad2bff5746f7244b2d -->
 </web-app>
