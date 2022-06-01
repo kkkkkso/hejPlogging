@@ -31,62 +31,60 @@
 			<div class="modalBox" style="text-align: left;">
 				<!-- 로그인창 -->
 				<div id = "login_view_">
-					<form name="login">
-						<div class = "top">
-							<span>로그인</span>
-						</div>
-						<div class="closeBtn"></div>
-						<div class = "box">
-							<div id = "login">
-								<form>
-									<!-- 아이디 비밀번호 입력창 -->
-									<div class="member_login_console" >
-										<div class = "inputbox">
-											<div id = "id">
-												<input type="text" placeholder="아이디" name="userId">
-											</div>
-											<div id = "passward">
-												<input type="text" placeholder="비밀번호" name="userPW">
-											</div>
+					<div class = "top">
+						<span>로그인</span>
+					</div>
+					<div class="closeBtn"></div>
+					<div class = "box">
+						<div id = "login">
+								<!-- 아이디 비밀번호 입력창 -->
+								<div class="member_login_console" >
+									<form action="UserLoginOk.us" method="post" name="loginForm">
+									<div class = "inputbox">
+										<div id = "id">
+											<input type="text" placeholder="아이디" name="userId">
 										</div>
-										<div class = "line">
-											<a class = "idmemory">
-												<input type = "checkbox"  name = "agree"  value = "아이디저장" required id="idsave" checked />
-												<label for = "idsave"><span>로그인 상태 유지</span></label>
-											</a>
+										<div id = "passward">
+											<input type="text" placeholder="비밀번호" name="userPW">
 										</div>
-										<!-- 로그인버튼 -->
-										<button type="button" style="color: #f5afaf; background:white; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid rgba(122, 121, 121, 0.75);">로그인</button>
-										<!-- 로그인 유지 -->
-										<div class = "my-infor">
-											<label>
-												<!-- 링크에 약관동의 연결 -->
-												<a href="" data-toggle="modal" id="choice_btn" >회원가입</a>
-											</label>
-											<label>
-												<!-- 링크에 아이디/비밀번호 찾기 연결 -->
-												<a href="" class = "find_id_pw" id = "find_id_btn">아이디·비밀번호찾기</a>
-											</label>
-										</div>
-										<div class="divider_txt_c">
-											<div class="border">
-												<span>또는</span>
-											</div>
-											<div>
-												<button type="button" style="height: 42px;border-radius: 4px;background-color: #feeB00;border:1px solid #eee;;padding: 0;color: #3c1e1e;font-size:14px;width:100%;">
-													<i class="icon_kakao"></i>카카오로 시작하기
-												</button>
-											</div>
-											<div class="border">
-												<span>또는</span>
-											</div>
-										</div>
-										<button type="button" id="non_member_btn" style="color: #fff; background:#8393a7; font-size:2em; width:100%;height:50px;font-size:15px; border:1px solid #eee;">비회원 주문 배송 조회 </button>
 									</div>
-								</form>
-							</div>
+									<div class = "line">
+										<a class = "idmemory">
+											<input type = "checkbox"  name = "agree"  value = "아이디저장" required id="idsave" checked />
+											<label for = "idsave"><span>로그인 상태 유지</span></label>
+										</a>
+									</div>
+									<!-- 로그인버튼 -->
+									<button type="button" id="login" style="color: #f5afaf; background:white; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid rgba(122, 121, 121, 0.75);">로그인</button>
+									</form>
+									<!-- 로그인 유지 -->
+									<div class = "my-infor">
+										<label>
+											<!-- 링크에 약관동의 연결 -->
+											<a href="" data-toggle="modal" id="choice_btn" >회원가입</a>
+										</label>
+										<label>
+											<!-- 링크에 아이디/비밀번호 찾기 연결 -->
+											<a href="" class = "find_id_pw" id = "find_id_btn">아이디·비밀번호찾기</a>
+										</label>
+									</div>
+									<div class="divider_txt_c">
+										<div class="border">
+											<span>또는</span>
+										</div>
+										<div>
+											<button type="button" style="height: 42px;border-radius: 4px;background-color: #feeB00;border:1px solid #eee;;padding: 0;color: #3c1e1e;font-size:14px;width:100%;">
+												<i class="icon_kakao"></i>카카오로 시작하기
+											</button>
+										</div>
+										<div class="border">
+											<span>또는</span>
+										</div>
+									</div>
+									<button type="button" id="non_member_btn" style="color: #fff; background:#8393a7; font-size:2em; width:100%;height:50px;font-size:15px; border:1px solid #eee;">비회원 주문 배송 조회 </button>
+								</div>
 						</div>
-					</form>
+					</div>
 				</div>
 			
 			<!-- 선택하기 -->
@@ -420,45 +418,41 @@
 			
 			<!-- 가입하기 -->
 			<div id = "join_view" class="join_view" >
-				<form name="login">
-					<div class = "top">
-						<span>회원가입</span>
-					</div>
-					<div class="closeBtn"></div>
-					<div class="my_picture">
-						<input title="file upload" type="file" name="files[]" style="width: 100%" accept="image/jpeg, image/jpg, image/png, image/gif, image/svg+xml">
-					</div>
-					<div class="person_check">
-						<span>본인인증</span><br>
-						<button type="button" style="color: 212122; background:white; font-size:2em; width:50%;height:43.16px;font-size:15px; border:1px solid #212122;"> 휴대폰 인증 </button>
-					</div>
-					<div class = "box">
+				<div class = "top">
+					<span>회원가입</span>
+				</div>
+				<div class="closeBtn"></div>
+				<div class="my_picture">
+					<input title="file upload" type="file" name="files[]" style="width: 100%" accept="image/jpeg, image/jpg, image/png, image/gif, image/svg+xml">
+				</div>
+				<div class = "box">
+					<form action="JoinOk.us" name="joinForm" method="post">
 						<div id = "login">
 							<!-- 이메일 비밀번호 입력창 -->
 							<div class="member_join_console" >
 								<div class = "inputbox">
 									<div id = "email">
-										<input type="text" placeholder="이메일" name="user_email">
+										<input type="text" placeholder="이메일" name="userEmail">
 									</div>
 									<div id = "passward">
-										<input type="text" placeholder="비밀번호" name="user_pw">
+										<input type="text" placeholder="비밀번호" name="userPw">
 									</div>
 									<div id = "passward_check">
-										<input type="text" placeholder="비밀번호 확인" name="user_pw">
+										<input type="text" placeholder="비밀번호 확인" name="userPw">
 									</div>
 									<div id="input_name">
 										<span>이름</span>
-										<input type="text" placeholder="" name="user-name">
+										<input type="text" placeholder="" name="userName">
 									</div>
 									<div id = gender>
 										<span>성별</span><br>
 										<div style="float:left;" >
 											<a class="check_box_gender_male" id="check_box_gender_male">
-												<input type="radio" name = "gender"  value = "남" id="gender_male">
+												<input type="radio" name = "userGender"  value = "남" id="gender_male">
 												<label for="gender_male"><span>남자</span></label>
 											</a><br>
 											<a class="check_box_gender_female" id="check_box_gender_female">
-												<input type="radio" name = "gender"  value = "여" id="gender_female">
+												<input type="radio" name = "userGender"  value = "여" id="gender_female">
 												<label for="gender_female"><span>여자</span></label>
 											</a>
 										</div>
@@ -466,7 +460,7 @@
 									<br><br><br>
 									<div id="phonenum">
 										<span>연락처</span>
-										<input type="tel" placeholder="연락처" name="user_phonenum">
+										<input type="tel" placeholder="연락처" name="userPhonenumber">
 									</div>
 									<div id="user_birth">
 										<span>생년월일</span>
@@ -475,14 +469,35 @@
 							</div>
 						</div>
 						<!-- 가입하기 -->
-						<button type="button" style="color: white; background:#f5afaf; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid #f5afaf;">가입하기</button>
-					</div>
-				</form>
+						<button type="button" onclick="join()" style="color: white; background:#f5afaf; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid #f5afaf;">가입하기</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
 	</header>
 </body>
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 
+<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script> 
 <script src="assets/js/login_all.js"></script>
+<script>
+	let loginForm = document.loginForm;
+	
+	$("input#login").on("click", function(){
+		if(!loginForm.memberId.value){
+			alert("아이디를 입력해주세요.");
+			return;
+		}
+		if(!loginForm.userPw.value){
+			alert("패스워드를 입력해주세요.");
+			return;
+		}
+		
+		loginForm.submit();
+	});
+
+	function join(){
+		joinForm.submit();
+	}
+
+</script>
 </html>

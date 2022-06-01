@@ -6,14 +6,14 @@
       <setting name="mapUnderscoreToCamelCase" value="true"/>
    </settings>
 	<typeAliases>
-		<typeAlias type="com.campaign.domain.vo.CampaignVO" alias="campaignVO"/>
-		<typeAlias type="com.course.domain.vo.CourseVO" alias="courseVO"/>
-		<typeAlias type="com.order.domain.vo.OrderVO" alias="orderVO"/>
-		<typeAlias type="com.product.domain.vo.ProductVO" alias="productVO"/>
-		<typeAlias type="com.productReview.domain.vo.ProductReviewVO" alias="productReviewVO"/>
-		<typeAlias type="com.record.domain.vo.RecordVO" alias="recordVO"/>
-		<typeAlias type="com.review.domain.vo.ReviewVO" alias="reviewVO"/>
-		<typeAlias type="com.user.domain.vo.UserVO" alias="userVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.CampaignVO" alias="campaignVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.CourseVO" alias="courseVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.OrderVO" alias="orderVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.ProductVO" alias="productVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.ProductReviewVO" alias="productReviewVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.RecordVO" alias="recordVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.ReviewVO" alias="reviewVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.UserVO" alias="userVO"/>
 	</typeAliases>
 
 	<environments default="mysql">
@@ -21,7 +21,7 @@
 			<transactionManager type="JDBC"/>
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-				<property name="url" value="jdbc:mysql://localhost:3306/form"/>
+				<property name="url" value="jdbc:mysql://localhost:3306/plogging"/>
 				<property name="username" value="root"/>
 				<property name="password" value="1234"/>
 			</dataSource>
