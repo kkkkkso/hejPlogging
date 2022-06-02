@@ -6,4 +6,9 @@
 		(course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start,course_start_detail,course_end,course_end_detail)
 		values(#{courseName}, #{courseDetail}, #{courseImgTitle}, #{courseImgDetail}, #{courseDifficulty}, #{courseStart},#{courseStartDetail},#{courseEnd},#{courseEndDetail})
 	</insert>
+	
+	<select id="selectCourses" resultType="courseVO">
+		select course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start,course_start_detail,course_end,course_end_detail
+		from tbl_course
+	</select>
 </mapper>

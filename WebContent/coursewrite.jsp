@@ -21,12 +21,17 @@
 			</p>
 			<p>
 				<label>
-					코스사진정보 : <input type="text" name="courseImgTitle">
+					코스사진타이틀 : <input type="text" name="courseImgTitle">
 				</label>
 			</p>
 			<p>
 				<label>
-					코스난이도: <input type="text" id="courseDifficulty">
+					코스사진정보 : <input type="text" name="courseImgDetail">
+				</label>
+			</p>
+			<p>
+				<label>
+					코스난이도: <input type="text" name="courseDifficulty">
 				</label>
 			</p>
 			<p>

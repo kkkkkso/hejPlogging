@@ -29,12 +29,12 @@ public class CourseAdd implements Action{
 		courseVO.setCourseStartDetail(req.getParameter("courseStartDetail"));
 		courseVO.setCourseEndDetail(req.getParameter("courseEndDetail"));
 
-		courseDAO.join(courseVO);
+		//courseDAO.join(courseVO);
 		
 //		req.setAttribute("memberName", memberVO.getMemberName());
-		req.setAttribute("CourseName", courseVO.getCourseName());
-		//req.setAttribute("courseList", courseDAO.selectCourses());
-		//System.out.println(courseDAO.selectCourses().get(0).getCourseName());
+//		req.setAttribute("CourseName", courseVO.getCourseName());
+		req.setAttribute("courseList", courseDAO.selectCourses());
+		System.out.println(courseDAO.selectCourses().get(0).getCourseName());
 		
 		actionInfo.setRedirect(false);
 		actionInfo.setPath("/courseMain.jsp");

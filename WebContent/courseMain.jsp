@@ -62,24 +62,28 @@
 				</div>
 				<!-- 3칸 목록 -->
 				<div class="product-list-container" id="wrap-3">
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href="courseSpecific.jsp"><img src="assets/img/course/seongdangmot.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="courseSpecific.jsp">추천 코스 - 대구 성당못</a>
+				<div class="row">
+				<c:forEach var="course" items="${courseList}">
+							<div class="col">
+								<div class="product-img-wrapper">
+									<a href="courseSpecific.jsp"><img src="assets/img/course/seongdangmot.png"></a>
 								</div>
-							</div>
-						</div>
+								<div class="product-detail">
+									<div class="product-name">
+										<a href="courseSpecific.jsp"></a>
+										<a href=""><c:out value="${course.getCourseName()}"/></a>
+									</div>
+								</div>
+							</div>		
+				</c:forEach>
+					</div>	
+					</div>	
 						<div class="col">
 							<div class="product-img-wrapper">
 								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
 							</div>
 							<div class="product-detail">
 								<div class="product-name">
-									<h1><c:out value="${CourseName}"/></h1>
 									<a href="">추천 코스 - 서울 양재천</a>
 								</div>
 							</div>
