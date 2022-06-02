@@ -17,9 +17,8 @@ public class CourseDAO {
    }
 
 //코스 db 추가
-public void join(CourseVO courseVO) {
+   public void join(CourseVO courseVO) {
 	sqlSession.insert("Course.join", courseVO);
-}
-
+   }
 
 }
