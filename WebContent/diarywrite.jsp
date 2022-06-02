@@ -35,7 +35,7 @@
                 	<div class="name">김소영님 </div>
                 </div>
                 <div class="position">	
-                  <form method="post">
+                  <form action="add.rv" method="post" name="diaryjoin">
   					<textarea id="summernote" name="editordata"></textarea>
   					<button class="cancel">취소</button>
     				<button class="confirm">작성</button>

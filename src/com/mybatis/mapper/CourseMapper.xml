@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http//mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="Member">
+<mapper namespace="Course">
+	<insert id="join" parameterType="courseVO">
+		insert into tbl_course
+		(course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start,course_start_detail,course_end,course_end_detail)
+		values(#{courseName}, #{courseDetail}, #{courseImgTitle}, #{courseImgDetail}, #{courseDifficulty}, #{courseStart},#{courseStartDetail},#{courseEnd},#{courseEndDetail})
+	</insert>
+	
+	<select id="selectCourses" resultType="courseVO">
+		select course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start,course_start_detail,course_end,course_end_detail
+		from tbl_course
+	</select>
 </mapper>

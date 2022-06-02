@@ -1,8 +1,8 @@
 package com.hejPlogging.domain.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
-
-
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import com.hejPlogging.domain.vo.CourseVO;
@@ -15,4 +15,15 @@ public class CourseDAO {
    public CourseDAO() {
       sqlSession = sqlSessionFactory.openSession(true);
    }
+
+//코스 db 추가
+public void join(CourseVO courseVO) {
+	sqlSession.insert("Course.join", courseVO);
+}
+
+//코스 전체 목록
+public List<CourseVO> selectCourses(){
+	return sqlSession.selectList("Course.selectCourses");
+}
+
 }
