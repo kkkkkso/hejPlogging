@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,12 @@
 </head>
 <body>
 	<section>
-		<form action="courseOK.cs" name="joinForm" method="post">
+		<form action="${pageContext.request.contextPath}/courseadd.cs" name="joinForm" method="post" enctype="multipart/form-data">
+			<p>
+				<label>
+					코스사진 : <input type="file" name="courseFile">
+				</label>
+			</p>
 			<p>
 				<label>
 					코스이름 : <input type="text" name="courseName">

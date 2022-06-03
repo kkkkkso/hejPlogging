@@ -61,276 +61,31 @@
 					</select>
 				</div>
 				<!-- 3칸 목록 -->
-				<div class="product-list-container" id="wrap-3">
-				<div class="row">
-				<c:forEach var="course" items="${courseList}">
-							<div class="col">
-								<div class="product-img-wrapper">
-									<a href="courseSpecific.jsp"><img src="assets/img/course/seongdangmot.png"></a>
-								</div>
-								<div class="product-detail">
-									<div class="product-name">
-										<a href="courseSpecific.jsp"></a>
-										<a href=""><c:out value="${course.getCourseName()}"/></a>
-									</div>
-								</div>
-							</div>		
-				</c:forEach>
-					</div>	
-					</div>	
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 서울 양재천</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/oido.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 시흥 오이도 빨간전망대</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/seongdangmot.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 대구 성당못</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 서울 양재천</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/oido.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 시흥 오이도 빨간전망대</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/seongdangmot.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 대구 성당못</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 서울 양재천</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/oido.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 시흥 오이도 빨간전망대</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/seongdangmot.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 대구 성당못</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 서울 양재천</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/oido.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 시흥 오이도 빨간전망대</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- 2칸 목록 -->
-				<div class="product-list-container" id="wrap-2">
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/seongdangmot.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 대구 성당못</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 서울 양재천</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/oido.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 시흥 오이도 빨간전망대</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/seongdangmot.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 대구 성당못</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 서울 양재천</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/oido.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 시흥 오이도 빨간전망대</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/seongdangmot.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 대구 성당못</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 서울 양재천</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/oido.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 시흥 오이도 빨간전망대</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/seongdangmot.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 대구 성당못</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/yangjaecheon.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 서울 양재천</a>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="product-img-wrapper">
-								<a href=""><img src="assets/img/course/oido.png"></a>
-							</div>
-							<div class="product-detail">
-								<div class="product-name">
-									<a href="">추천 코스 - 시흥 오이도 빨간전망대</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+            <div class="product-list-container" id="wrap-3">
+            <c:set var="i" value="0" />
+            <c:set var="j" value="3" />
+            <c:forEach var="course" items="${courseList}">
+                   <c:if test="${i%j == 0 }">
+                  <div class="row">
+                  </c:if>
+                     <div class="col">
+                        <div class="product-img-wrapper">
+                           <a href="courseSpecific.jsp"><img src="assets/img/course/seongdangmot.png"></a>
+                        </div>
+                        <div class="product-detail">
+                           <div class="product-name">
+                              <a href="courseSpecific.jsp"></a>
+                              <a href="">
+                              <c:out value="${course.getCourseName()}"/>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  <c:if test="${i%j == j-1 }">   
+                  </div>
+                  </c:if>
+                  <c:set var="i" value="${i+1}" />         
+            </c:forEach>   
 				<nav class="page">
 					<ul class="page">
 						<li class="page"><a href="">&lt</a></li>

@@ -28,13 +28,19 @@ public class CourseFrontController extends HttpServlet {
 		String command = requestURL.substring(requestURL.lastIndexOf("/") + 1);
 		ActionInfo actionInfo = null;
 		
-		if(command.equals("courseOK.cs")) {
+		if(command.equals("courseadd.cs")) {
 			actionInfo = new CourseAdd().execute(req, resp);
 		} else if(command.equals("coursewrite")) {
 			actionInfo = new ActionInfo();
 			actionInfo.setRedirect(true); 
 			actionInfo.setPath(req.getContextPath() + "/.jsp");
 		}  else {
+		//	 404 일 때 출력할 에러 페이지 경로 작성
+		}
+		
+		if(command.equals("courseMainInfo.cs")) {
+			actionInfo = new CourseMainInfo().execute(req, resp);
+		}else {
 		//	 404 일 때 출력할 에러 페이지 경로 작성
 		}
 		

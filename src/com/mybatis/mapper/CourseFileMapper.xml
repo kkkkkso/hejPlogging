@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http//mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CourseFile">
+	<insert id="insert" parameterType="courseFileVO">
+		insert into tbl_coursefile (file_name, file_name_original, course_number)
+		values(#{fileName}, #{fileNameOriginal}, #{courseNumber})
+	</insert>
+	
+	<!-- 첨부파일 가져오기 -->
+	<select id="select" parameterType="_int" resultType="courseFileVO">
+		select file_name, file_name_original, course_number
+		from tbl_coursefile
+		where course_number = #{courseNumber}
+	</select>
+</mapper>
