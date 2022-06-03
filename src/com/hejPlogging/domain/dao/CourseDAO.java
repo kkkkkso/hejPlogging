@@ -25,4 +25,8 @@ public class CourseDAO {
    public List<CourseVO> selectCourses(){
 	return sqlSession.selectList("Course.selectCourses");
    }
+//최근 게시글 번호
+public int getSeq() {
+	return sqlSession.selectOne("Course.getSeq");
+	}
 }
