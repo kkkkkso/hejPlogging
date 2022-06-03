@@ -1,5 +1,7 @@
 package com.hejPlogging.domain.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -14,4 +16,9 @@ public class ProductDAO {
    public ProductDAO() {
       sqlSession = sqlSessionFactory.openSession(true);
    }
-}
+      
+    //상품 전체 목록
+  	public List<ProductVO> selectProducts(){
+  		return sqlSession.selectList("Product.selectProducts");
+  	}
+}  	

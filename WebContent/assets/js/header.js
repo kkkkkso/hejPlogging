@@ -16,12 +16,13 @@ const open = () => {
 //로그인버튼
   $("a.openBtn").click(function(e){
       e.preventDefault();
+      $(".modal").show();
+      $("#login_view_").show();
       $("div.choice_view").hide();
       $("div.find_idpw_veiw").hide();
       $("div.non_member_view").hide();
       $("div.agree_veiw").hide();
       $("div.join_view").hide();
-      $("#login_view_").show();
   })
 //회원가입버튼
   $("a#choice_btn").click(function(e){
@@ -47,13 +48,18 @@ const open = () => {
       $("div.choice_view").hide();
       $("div.agree_veiw").show();
   })
-  //가입하기버튼
-  $("#real_join").click(function(e){
+ //가입하기버튼 
+  $(".signup-button").click(function(e){
       e.preventDefault();
-      $("div.agree_veiw").hide();
-      $("div#join_view").show();
+      $(".agree_veiw").hide();
+      $(".join_view").show();
   })
-  
+
+    $(".closeBtn").click(function(e){
+      e.preventDefault();
+      $(".modal").hide();
+    
+  })
 //전체동의
 
 function selectAll(selectAll)  {
