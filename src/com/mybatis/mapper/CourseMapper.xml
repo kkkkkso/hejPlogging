@@ -11,4 +11,10 @@
 		select course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start,course_start_detail,course_end,course_end_detail
 		from tbl_course
 	</select>
+	
+	<!-- 최근 게시글 번호 -->
+	<select id="getSeq" resultType="_int">
+		select course_number from tbl_course
+		order by 1 desc limit 0, 1
+	</select>
 </mapper>
