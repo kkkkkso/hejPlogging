@@ -482,15 +482,15 @@
 <script>
 	let loginForm = document.loginForm;
 	
-	$("input#login").on("click", function(){
-		if(!loginForm.memberId.value){
+	$("button#login").on("click", function(){
+		if(!loginForm.userId.value){
 			alert("아이디를 입력해주세요.");
 			return;
 		}
-		if(!loginForm.userPw.value){
+		/* if(!loginForm.userPw.value){
 			alert("패스워드를 입력해주세요.");
 			return;
-		}
+		} */
 		
 		loginForm.submit();
 	});
