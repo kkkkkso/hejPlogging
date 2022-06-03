@@ -14,6 +14,7 @@ document.querySelector(".bg").addEventListener("click", close);
 
 
 //로그인버튼
+<<<<<<< HEAD
 $("a.openBtn").click(function(e){
 	e.preventDefault();
 	document.querySelector(".modal").classList.remove("hidden");
@@ -24,6 +25,18 @@ $("a.openBtn").click(function(e){
 	$("div.agree_veiw").hide();
 	$("div.join_view").hide();
 })
+=======
+  $("a.openBtn").click(function(e){
+      e.preventDefault();
+      $(".modal").show();
+      $("#login_view_").show();
+      $("div.choice_view").hide();
+      $("div.find_idpw_veiw").hide();
+      $("div.non_member_view").hide();
+      $("div.agree_veiw").hide();
+      $("div.join_view").hide();
+  })
+>>>>>>> master
 //회원가입버튼
 $("a#choice_btn").click(function(e){
 	e.preventDefault();
@@ -37,6 +50,7 @@ $("a#find_id_btn").click(function(e){
 	$("div.find_idpw_veiw").show();
 })
 //비회원 주문조회 
+<<<<<<< HEAD
 $("#non_member_btn").click(function(e){
 	e.preventDefault();
 	$("#login_view_").hide();
@@ -55,6 +69,31 @@ $("#join_btn").click(function(e){
 	$("div.agree_veiw").show();
 })
 
+=======
+  $("#non_member_btn").click(function(e){
+      e.preventDefault();
+      $("#login_view_").hide();
+      $("div.non_member_view").show();
+  })
+//동의하기  
+  $("#join_btn").click(function(e){
+      e.preventDefault();
+      $("div.choice_view").hide();
+      $("div.agree_veiw").show();
+  })
+ //가입하기버튼 
+  $(".signup-button").click(function(e){
+      e.preventDefault();
+      $(".agree_veiw").hide();
+      $(".join_view").show();
+  })
+
+    $(".closeBtn").click(function(e){
+      e.preventDefault();
+      $(".modal").hide();
+    
+  })
+>>>>>>> master
 //전체동의
 
 function selectAll(selectAll){
@@ -69,4 +108,8 @@ function selectAll(selectAll){
 
 
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> master
