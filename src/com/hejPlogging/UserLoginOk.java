@@ -24,22 +24,21 @@ public class UserLoginOk implements Action {
 		UserDAO userDAO = new UserDAO();
 		String userId = req.getParameter("userId");
 		String userPw = req.getParameter("userPw");
-		int userNumber = 0;
 		userPw = new String(Base64.getEncoder().encode(userPw.getBytes()));
 		
 		userMap.put("userId", userId);
 		userMap.put("userPw", userPw);
 		
 		try {
-			userNumber = userDAO.login(userMap);
-			session.setAttribute("userNumber", userNumber);
+			userId = userDAO.login(userMap);
+			session.setAttribute("userId", userId);
 		} catch (Exception e) {
 			System.out.println("로그인 실패");
 			actionInfo.setRedirect(false);
-			actionInfo.setPath("/login.jsp");
+			actionInfo.setPath("/index.jsp");
 		}
 		actionInfo.setRedirect(false);
-		actionInfo.setPath("/mainPage.jsp");
+		actionInfo.setPath("/index.jsp");
 		return actionInfo;
 	}
 

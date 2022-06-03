@@ -23,7 +23,7 @@ public class UserDAO {
 	}
 	
 	// 로그인
-	public Integer login(HashMap<String, String> userMap) {
+	public String login(HashMap<String, String> userMap) {
 		return sqlSession.selectOne("User.login", userMap);
 	}
 }
