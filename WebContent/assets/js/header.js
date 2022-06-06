@@ -71,5 +71,32 @@ function selectAll(selectAll)  {
     })
   }
   
+  $(".find-tab button").on('click',function () {
+	    $(".find-tab button").removeClass("active");
+	    $(this).addClass("active");
+	    $(".find-box").hide();
+	    var activeTab = $(this).attr("rel");
+	    $("#" + activeTab).show();
+
+	    if($('.find-tab button[rel="find1"]').hasClass('active')){
+	        $('.find_idpw_veiw .tit').text("아이디 찾기");
+	        $('.find_idpw_veiw .button-box button').text("아이디 찾기");
+	    }else{
+	        $('.find_idpw_veiw .tit').text("비밀번호 찾기");
+	        $('.find_idpw_veiw .button-box button').text("비밀번호 찾기");
+	    }
+
+	  });
+
+
+
+	  $('.find-box .box input[type="radio"]').on('click',function () {
+
+	    console.log($(this));
+	    $('.radio-type1').removeClass('active');
+	    $(this).parents('.radio-type1').addClass('active');
+
+	  });
+
 
   

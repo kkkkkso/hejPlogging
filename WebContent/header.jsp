@@ -416,7 +416,7 @@
 
 
 					<div id="fileupload_profile_img2" class="fileupload_profile_img">
-						<div id="profile_img2" class="img-circle" style="margin: 0 auto; background: url(default_profile.png)  50% 50% / cover no-repeat;"></div>
+						<div id="profile_img2" class="img-circle" style="margin: 0 auto; background: url(assets/img/default_profile.png)  50% 50% / cover no-repeat;"></div>
 						<span class="over">
 							<i class="fa-solid fa-camera"></i>
 						</span>
@@ -473,10 +473,51 @@
 												<option>1990</option>
 											</select>
 											<select>
-												<option>월</option>
+												<option>1월</option>
+												<option>2월</option>
+												<option>3월</option>
+												<option>4월</option>
+												<option>5월</option>
+												<option>6월</option>
+												<option>7월</option>
+												<option>8월</option>
+												<option>9월</option>
+												<option>10월</option>
+												<option>11월</option>
+												<option>12월</option>
 											</select>
 											<select>
-												<option>일</option>
+												<option>1일</option>
+												<option>2일</option>
+												<option>3일</option>
+												<option>4일</option>
+												<option>5일</option>
+												<option>6일</option>
+												<option>7일</option>
+												<option>8일</option>
+												<option>9일</option>
+												<option>10일</option>
+												<option>11일</option>
+												<option>12일</option>
+												<option>13일</option>
+												<option>14일</option>
+												<option>15일</option>
+												<option>16일</option>
+												<option>17일</option>
+												<option>18일</option>
+												<option>19일</option>
+												<option>20일</option>
+												<option>21일</option>
+												<option>22일</option>
+												<option>23일</option>
+												<option>24일</option>
+												<option>25일</option>
+												<option>26일</option>
+												<option>27일</option>
+												<option>28일</option>
+												<option>29일</option>
+												<option>30일</option>
+												<option>31일</option>
 											</select>
 										</div>
 									</div>
@@ -489,6 +530,9 @@
 				</form>
 			</div>
 		</div>
+	</div>
+	</div>
+	</div>
 	</div>
 	</header>
 </body>
