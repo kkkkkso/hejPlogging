@@ -25,66 +25,68 @@
 				</div>
 				<div class="login">
 					<a class="openBtn" data-toggle="modal" href="#login_view">로그인</a>
-	<!-- 로그인화면 -->
+		<!-- 로그인화면 -->
 	<div class="modal hidden" id="login_view">
 		<div class="bg"></div>
 			<div class="modalBox" style="text-align: left;">
 				<!-- 로그인창 -->
 				<div id = "login_view_">
-					<div class = "top">
-						<span>로그인</span>
-					</div>
-					<div class="closeBtn"></div>
-					<div class = "box">
-						<div id = "login">
-								<!-- 아이디 비밀번호 입력창 -->
-								<div class="member_login_console" >
-									<form action="UserLoginOk.us" method="post" name="loginForm">
-									<div class = "inputbox">
-										<div id = "id">
-											<input type="text" placeholder="아이디" name="userId">
-										</div>
-										<div id = "passward">
-											<input type="text" placeholder="비밀번호" name="userPW">
-										</div>
-									</div>
-									<div class = "line">
-										<a class = "idmemory">
-											<input type = "checkbox"  name = "agree"  value = "아이디저장" required id="idsave" checked />
-											<label for = "idsave"><span>로그인 상태 유지</span></label>
-										</a>
-									</div>
-									<!-- 로그인버튼 -->
-									<button type="button" id="login" style="color: #f5afaf; background:white; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid rgba(122, 121, 121, 0.75);">로그인</button>
-									</form>
-									<!-- 로그인 유지 -->
-									<div class = "my-infor">
-										<label>
-											<!-- 링크에 약관동의 연결 -->
-											<a href="" data-toggle="modal" id="choice_btn" >회원가입</a>
-										</label>
-										<label>
-											<!-- 링크에 아이디/비밀번호 찾기 연결 -->
-											<a href="" class = "find_id_pw" id = "find_id_btn">아이디·비밀번호찾기</a>
-										</label>
-									</div>
-									<div class="divider_txt_c">
-										<div class="border">
-											<span>또는</span>
-										</div>
-										<div>
-											<button type="button" style="height: 42px;border-radius: 4px;background-color: #feeB00;border:1px solid #eee;;padding: 0;color: #3c1e1e;font-size:14px;width:100%;">
-												<i class="icon_kakao"></i>카카오로 시작하기
-											</button>
-										</div>
-										<div class="border">
-											<span>또는</span>
-										</div>
-									</div>
-									<button type="button" id="non_member_btn" style="color: #fff; background:#8393a7; font-size:2em; width:100%;height:50px;font-size:15px; border:1px solid #eee;">비회원 주문 배송 조회 </button>
-								</div>
+					<form name="login">
+						<div class = "top">
+							<span>로그인</span>
 						</div>
-					</div>
+						<div class="closeBtn"></div>
+						<div class = "box">
+							<div id = "login">
+								<form>
+									<!-- 아이디 비밀번호 입력창 -->
+									<div class="member_login_console" >
+										<div class = "inputbox">
+											<div id = "id">
+												<input type="text" placeholder="아이디" name="userId">
+											</div>
+											<div id = "passward">
+												<input type="text" placeholder="비밀번호" name="userPW">
+											</div>
+										</div>
+										<div class = "line">
+											<a class = "idmemory">
+												<input type = "checkbox"  name = "agree"  value = "아이디저장" required id="idsave" checked />
+												<label for = "idsave"><span>로그인 상태 유지</span></label>
+											</a>
+										</div>
+										<!-- 로그인버튼 -->
+										<button type="button" style="color: #f5afaf; background:white; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid rgba(122, 121, 121, 0.75);">로그인</button>
+										<!-- 로그인 유지 -->
+										<div class = "my-infor">
+											<label>
+												<!-- 링크에 약관동의 연결 -->
+												<a href="" data-toggle="modal" id="choice_btn" >회원가입</a>
+											</label>
+											<label>
+												<!-- 링크에 아이디/비밀번호 찾기 연결 -->
+												<a href="" class = "find_id_pw" id = "find_id_btn">아이디·비밀번호찾기</a>
+											</label>
+										</div>
+										<div class="divider_txt_c">
+											<div class="border">
+												<span>또는</span>
+											</div>
+											<div>
+												<button type="button" style="height: 42px;border-radius: 4px;background-color: #feeB00;border:1px solid #eee;;padding: 0;color: #3c1e1e;font-size:14px;width:100%;">
+													<i class="icon_kakao"></i>카카오로 시작하기
+												</button>
+											</div>
+											<div class="border">
+												<span>또는</span>
+											</div>
+										</div>
+										<button type="button" id="non_member_btn" style="color: #fff; background:#8393a7; font-size:2em; width:100%;height:50px;font-size:15px; border:1px solid #eee;">비회원 주문 배송 조회 </button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</form>
 				</div>
 			
 			<!-- 선택하기 -->
@@ -119,64 +121,52 @@
 	
 			<!-- 아이디 비밀번호찾기 -->
 			<div id = "find_idpw_veiw" class = "find_idpw_veiw" >
-				<form name="login">
-					<div class = "top">
-						<span>아이디찾기</span>
-					</div>
-					<div class="closeBtn"></div>
-					<div class="my_picture">
-						<input title="file upload" type="file" name="files[]" style="width: 100%" accept="image/jpeg, image/jpg, image/png, image/gif, image/svg+xml">
-					</div>
-					<div class="person_check">
-						<hr>
-						<a class="check_box_userid_find" id="check_box_userid_find">
-							<input type="radio" name = "userfind_info"  value = "user_id_find" id="user_id_find">
-							<label for="user_id_find"><span>아이디 찾기</span></label>
-						</a>
-						<a class="check_box_userpw_find" id="check_box_userpw_find">
-							<input type="radio" name = "userfind_info"  value = "user_pw_find" id="user_pw_find">
-							<label for="user_pw_find"><span>비밀번호 찾기</span></label>
-						</a>
-					</div>
-					<div class = "box">
-						<div id = "login">
-							<!-- 아이디찾기 -->
-							<div id = findid_choice style="display: none">
-								<div style="float:left;" >
-									<a class="check_box_email_find" id="check_box_email_find">
-										<input type="radio" name = "findid_choice"  value = "email_find" id="email_find">
-										<label for="email_find"><span>가입한 이메일로 찾기</span></label>
-									</a><br><hr>
-									<a class="check_box_phone_find" id="check_box_phone_find">
-										<input type="radio" name = "findid_choice"  value = "phone_find" id="phone_find">
-										<label for="phone_find"><span>가입한 휴대폰으로 찾기</span></label>
-									</a><br><hr>
-									<a class="check_box_userinfo_find" id="check_box_userinfo_find">
-										<input type="radio" name = "findid_choice"  value = "userinfo_find" id="userinfo_find">
-										<label for="userinfo_find"><span>휴대폰 본인인증으로 찾기</span></label>
-									</a><hr>
-									<button type="button"style="color: white; background:#f5afaf; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid #f5afaf;">아이디 찾기</button>
-								</div>
-							</div>
-							<div class="member_find_console" >
-								<div class = "findid_choice" style="display: none">
-									<div id = "email_find_box">
-										<input type="text" placeholder="이메일 또는 아이디">
-									</div>
-									<div id = "phone_find_box">
-										<input type="text" placeholder="이름 또는 닉네임">
-										<input type="text" placeholder="휴대폰 번호">
-									</div>
-									<div id = "userinfo_find"></div>
-								</div>
-								<div id="pw_find_box"style="display: none" >
-									<input type="text" placeholder="가입한 아이디" name="user-name">
-									<button type="button"style="color: white; background:#f5afaf; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid #f5afaf;">비밀번호 찾기</button>
-								</div>
-							</div>
+				<div class="closeBtn"></div>
+				<div class="top">
+					<span class=tit>아이디 찾기</span>
+				</div>
+				<div class="find-tab">
+					<button type="button" rel="find1" class="active">아이디 찾기</button>
+					<button type="button" rel="find2">비밀번호 찾기</button>
+				</div>
+				<div id="find1" class="find-box">
+					<p class=txt>아이디를 찾을 방법을 선택해주세요.</p>
+					<div class="select-email box">
+						<p class="radio-type1 active">
+							<input type="radio" id="radio-chk1" name="id-group" checked>
+							<label for="radio-chk1">가입한 이메일로 찾기</label>
+						</p>
+						<div class="input-wrap">
+							<input type="text" placeholder="이메일 또는 아이디">
 						</div>
 					</div>
-				</form>
+					<div class="select-tel box">
+						<p class="radio-type1">
+							<input type="radio" id="radio-chk2" name="id-group">
+							<label for="radio-chk2">가입한 휴대폰으로 찾기</label>
+						</p>
+						<div class="input-wrap">
+							<input type="text" placeholder="이름 또는 닉네임">
+							<input type="tel" placeholder="휴대폰 번호">
+						</div>
+					</div>
+					<div class="self-authentication box">
+						<p class="radio-type1">
+							<input type="radio" id="radio-chk3" name="id-group">
+							<label for="radio-chk3">휴대폰 본인인증으로 찾기</label>
+						</p>
+					</div>
+				</div>
+				<div id="find2" class="find-box">
+					<div class="select-id box">
+						<div class="input-wrap">
+							<input type="text" placeholder="가입한 아이디">
+						</div>
+					</div>
+				</div>
+				<div class="button-box">
+					<button type="button">아이디 찾기</button>
+				</div>
 			</div>
 	
 	
@@ -411,69 +401,138 @@
 					<!-- 가입하기/취소버튼 -->
 					<div class="join_cancle_button">
 						<button type="button" style="color: black;">취소</button>
-						<button type="button" id="real_join">가입하기</button>
+						<button type="button" class="signup-button">가입하기</button>
 					</div>
 				</form>
 			</div>
 			
 			<!-- 가입하기 -->
 			<div id = "join_view" class="join_view" >
-				<div class = "top">
-					<span>회원가입</span>
-				</div>
-				<div class="closeBtn"></div>
-				<div class="my_picture">
-					<input title="file upload" type="file" name="files[]" style="width: 100%" accept="image/jpeg, image/jpg, image/png, image/gif, image/svg+xml">
-				</div>
-				<div class = "box">
-					<form action="JoinOk.us" name="joinForm" method="post">
+				<form name="login">
+					<div class = "top">
+						<span>회원가입</span>
+					</div>
+					<div class="closeBtn"></div>
+
+
+					<div id="fileupload_profile_img2" class="fileupload_profile_img">
+						<div id="profile_img2" class="img-circle" style="margin: 0 auto; background: url(assets/img/default_profile.png)  50% 50% / cover no-repeat;"></div>
+						<span class="over">
+							<i class="fa-solid fa-camera"></i>
+						</span>
+						<div id="drop_profile_img2" class="drop_profile_img">
+							<input title="file upload" type="file" name="files[]" style="width: 100%" accept="image/jpeg, image/jpg, image/png, image/gif, image/svg+xml">
+						</div>
+					</div>
+
+
+					<div class="person_check">
+						<span>본인인증</span>
+						<button type="button" style="display: inline-block;border: 1px solid rgba(33,33,33,0.2);font-weight: bold;background: #fff;padding: 10px 25px;font-size: 14px;"> 휴대폰 인증 </button>
+					</div>
+					<div class = "box">
 						<div id = "login">
 							<!-- 이메일 비밀번호 입력창 -->
 							<div class="member_join_console" >
 								<div class = "inputbox">
 									<div id = "email">
-										<input type="text" placeholder="이메일" name="userEmail">
+										<input type="text" placeholder="이메일" name="user_email">
 									</div>
 									<div id = "passward">
-										<input type="text" placeholder="비밀번호" name="userPw">
+										<input type="text" placeholder="비밀번호" name="user_pw">
 									</div>
 									<div id = "passward_check">
-										<input type="text" placeholder="비밀번호 확인" name="userPw">
+										<input type="text" placeholder="비밀번호 확인" name="user_pw">
 									</div>
 									<div id="input_name">
 										<span>이름</span>
-										<input type="text" placeholder="" name="userName">
+										<input type="text" placeholder="" name="user-name">
 									</div>
 									<div id = gender>
-										<span>성별</span><br>
-										<div style="float:left;" >
-											<a class="check_box_gender_male" id="check_box_gender_male">
-												<input type="radio" name = "userGender"  value = "남" id="gender_male">
-												<label for="gender_male"><span>남자</span></label>
-											</a><br>
-											<a class="check_box_gender_female" id="check_box_gender_female">
-												<input type="radio" name = "userGender"  value = "여" id="gender_female">
-												<label for="gender_female"><span>여자</span></label>
-											</a>
+										<span>성별</span>
+										<div>
+											<p class="radio-type1">
+												<input type="radio" id="gender1">
+												<label for="gender1">남자</label>
+											</p>
+											<p class="radio-type1">
+												<input type="radio" id="gender2">
+												<label for="gender2">여자</label>
+											</p>
 										</div>
 									</div>
-									<br><br><br>
+								
 									<div id="phonenum">
 										<span>연락처</span>
-										<input type="tel" placeholder="연락처" name="userPhonenumber">
+										<input type="tel" placeholder="연락처" name="user_phonenum">
 									</div>
 									<div id="user_birth">
 										<span>생년월일</span>
+										<div class="flex-box">
+											<select>
+												<option>1990</option>
+											</select>
+											<select>
+												<option>1월</option>
+												<option>2월</option>
+												<option>3월</option>
+												<option>4월</option>
+												<option>5월</option>
+												<option>6월</option>
+												<option>7월</option>
+												<option>8월</option>
+												<option>9월</option>
+												<option>10월</option>
+												<option>11월</option>
+												<option>12월</option>
+											</select>
+											<select>
+												<option>1일</option>
+												<option>2일</option>
+												<option>3일</option>
+												<option>4일</option>
+												<option>5일</option>
+												<option>6일</option>
+												<option>7일</option>
+												<option>8일</option>
+												<option>9일</option>
+												<option>10일</option>
+												<option>11일</option>
+												<option>12일</option>
+												<option>13일</option>
+												<option>14일</option>
+												<option>15일</option>
+												<option>16일</option>
+												<option>17일</option>
+												<option>18일</option>
+												<option>19일</option>
+												<option>20일</option>
+												<option>21일</option>
+												<option>22일</option>
+												<option>23일</option>
+												<option>24일</option>
+												<option>25일</option>
+												<option>26일</option>
+												<option>27일</option>
+												<option>28일</option>
+												<option>29일</option>
+												<option>30일</option>
+												<option>31일</option>
+											</select>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<!-- 가입하기 -->
-						<button type="button" onclick="join()" style="color: white; background:#f5afaf; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid #f5afaf;">가입하기</button>
-					</form>
-				</div>
+						<button type="button" style="color: white; background:#f5afaf; font-size:2em; width:320.03px;height:43.16px;font-size:15px; border:1px solid #f5afaf;">가입하기</button>
+					</div>
+				</form>
 			</div>
 		</div>
+	</div>
+	</div>
+	</div>
 	</div>
 	</header>
 </body>
