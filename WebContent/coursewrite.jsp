@@ -12,7 +12,7 @@
 		<form action="${pageContext.request.contextPath}/courseadd.cs" name="joinForm" method="post" enctype="multipart/form-data">
 			<p>
 				<label>
-					코스사진 : <input type="file" name="courseFile">
+					코스추가사진 : <input type="file" name="courseFile">
 				</label>
 			</p>
 			<p>
@@ -46,7 +46,7 @@
 				</label>
 				<input type="text" id="sample5_address" placeholder="주소" name="courseStart">
 				<input type="button" onclick="sample5_execDaumPostcode()" value="주소 검색"><br>
-				<input type="text" name="startCourseDetail" placeholder="상세 주소">
+				<input type="text" name="courseStartDetail" placeholder="상세 주소">
 				<div id="map" style="width:300px;height:300px;margin-top:10px;display:none"></div>
 			<p>
 			<p>
@@ -55,7 +55,7 @@
 				</label>
 				<input type="text" id="sample5_address2" placeholder="주소" name="courseEnd">
 				<input type="button" onclick="sample5_execDaumPostcode2()" value="주소 검색"><br>
-				<input type="text" name="endCourseDetail" placeholder="상세 주소">
+				<input type="text" name="courseEndDetail" placeholder="상세 주소">
 				<div id="map2" style="width:300px;height:300px;margin-top:10px;display:none"></div>
 			<p>
 				<input type="button" value="코스추가" onclick="join()">

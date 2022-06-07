@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,12 +66,13 @@
             <c:set var="i" value="0" />
             <c:set var="j" value="3" />
             <c:forEach var="course" items="${courseList}">
-                   <c:if test="${i%j == 0 }">
+                  <c:if test="${i%j == 0 }">
                   <div class="row">
                   </c:if>
                      <div class="col">
                         <div class="product-img-wrapper">
-                           <a href="courseSpecific.jsp"><img src="assets/img/course/seongdangmot.png"></a>
+                           <a href="${pageContext.request.contextPath }/courseDetail.cs?courseNumber=${course.getCourseNumber()}&page=${page}"><img src="assets/img/course/seongdangmot.png"></a>
+                        	 <c:out value="${course.getFileNameOriginal()}"/>
                         </div>
                         <div class="product-detail">
                            <div class="product-name">
@@ -85,18 +87,38 @@
                   </div>
                   </c:if>
                   <c:set var="i" value="${i+1}" />         
-            </c:forEach>   
-				<nav class="page">
-					<ul class="page">
-						<li class="page"><a href="">&lt</a></li>
-						<li class="page"><a href="">1</a></li>
-						<li class="page"><a href="">2</a></li>
-						<li class="page"><a href="">3</a></li>
-						<li class="page"><a href="">4</a></li>
-						<li class="page"><a href="">5</a></li>
-						<li class="page"><a href="">&gt</a></li>
-					</ul>
-				</nav>
+            </c:forEach> 
+            <c:set var="page" value="${page}"/>
+			<c:set var="startPage" value="${startPage}"/>
+			<c:set var="endPage" value="${endPage}"/>
+			<c:set var="realEndPage" value="${realEndPage}"/>
+			<c:set var="total" value="${total}"/>
+				<table style="font-size:1.3rem">
+					<tr align="center" align="middle">
+						<td class="web-view">
+							<c:if test="${startPage > 1}">
+								<a href="${pageContext.request.contextPath}/courseMainInfo.cs?page=${startPage - 1}">&lt;</a>
+							</c:if>
+												
+						<c:forEach var="z" begin="${startPage}" end="${endPage}">
+							<c:choose>
+								<c:when test="${z eq page}">
+									<c:out value="${z}"/>&nbsp;&nbsp;
+								</c:when>
+								<c:otherwise>
+									<a href="${pageContext.request.contextPath}/courseMainInfo.cs?page=${z}">
+										<c:out value="${z}"/>
+									</a>&nbsp;&nbsp;
+								</c:otherwise>
+							</c:choose>
+						</c:forEach>
+													
+						<c:if test="${endPage < realEndPage}">
+							<a href="${pageContext.request.contextPath}/courseMainInfo.cs?page=${endPage + 1}">&gt;</a>
+						</c:if>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</section>

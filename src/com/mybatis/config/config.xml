@@ -8,6 +8,7 @@
 	<typeAliases>
 		<typeAlias type="com.hejPlogging.domain.vo.CampaignVO" alias="campaignVO"/>
 		<typeAlias type="com.hejPlogging.domain.vo.CourseVO" alias="courseVO"/>
+		<typeAlias type="com.hejPlogging.domain.vo.CourseDTO" alias="courseDTO"/>
 		<typeAlias type="com.hejPlogging.domain.vo.CourseFileVO" alias="courseFileVO"/>
 		<typeAlias type="com.hejPlogging.domain.vo.OrderVO" alias="orderVO"/>
 		<typeAlias type="com.hejPlogging.domain.vo.ProductVO" alias="productVO"/>

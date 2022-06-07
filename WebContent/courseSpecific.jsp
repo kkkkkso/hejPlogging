@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>	
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +15,12 @@
 	<link rel="stylesheet" href="assets/css/productSpecific.css">
 </head>
 <body>
+	<c:set var="course" value="${course}"/>
+		 <c:forEach var="course" items="${course}">
+		 	<c:out value="${course.getCourseName()}"/>
+		 </c:forEach>
+   	<c:set var="files" value="${files}"/>
+   	<c:set var="page" value="${page}"/>
 	<jsp:include page="header.jsp"/>
 	<jsp:include page="Nav.jsp"/>
 	<section>
