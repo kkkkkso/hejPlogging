@@ -27,7 +27,7 @@
         <!-- 작은 이미지 -->
         <div class="small_img_wrap">
             <div class="small_img" >
-                <a href="courseMain.jsp">
+                <a href="courseMain.cs">
                     <img class="link_img" src="assets/img/mainPage/start.png" alt="">
                     <div>플로깅 시작하기</div>
                 </a>

@@ -34,7 +34,9 @@ public class CourseFrontController extends HttpServlet {
 			actionInfo = new ActionInfo();
 			actionInfo.setRedirect(true); 
 			actionInfo.setPath(req.getContextPath() + "/.jsp");
-		}  else {
+		}  else if(command.equals("mainPage.main")) {
+			actionInfo = new MainShow().execute(req, resp);
+		}else {
 		//	 404 일 때 출력할 에러 페이지 경로 작성
 		}
 		
