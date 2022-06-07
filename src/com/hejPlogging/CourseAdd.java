@@ -24,7 +24,7 @@ public class CourseAdd implements Action{
 	@Override
 	public ActionInfo execute(HttpServletRequest req, HttpServletResponse resp) throws IOException{
 		req.setCharacterEncoding("UTF-8");
-		String uploadPath = "C:\\upload";
+		String uploadPath = "D:\\web_1900_jhs\\jsp\\workspace\\1teamWeb\\WebContent\\upload";
 		int fileSize = 1024 * 1024 * 5; //5M
 		
 		ActionInfo actionInfo = new ActionInfo();
