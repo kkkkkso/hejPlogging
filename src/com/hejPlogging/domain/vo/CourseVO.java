@@ -11,6 +11,8 @@ public class CourseVO {
 	private String courseStartDetail; 
 	private String courseEnd;
 	private String courseEndDetail; 
+
+
 	
 	public CourseVO() {;}
 
@@ -93,6 +95,7 @@ public class CourseVO {
 	public void setCourseEndDetail(String courseEndDetail) {
 		this.courseEndDetail = courseEndDetail;
 	}
+
 }
 
 

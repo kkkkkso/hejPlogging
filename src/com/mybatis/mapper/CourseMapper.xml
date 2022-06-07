@@ -8,9 +8,17 @@
 	</insert>
 </mapper>
 	
-	<select id="selectCourses" resultType="courseVO">
-		select course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start,course_start_detail,course_end,course_end_detail
-		from tbl_course
+	<select id="selectCourses" resultType="courseDTO" parameterType="map">
+		select c.course_number,course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start,course_start_detail,course_end,course_end_detail,file_name,file_name_original
+		from tbl_course c join tbl_coursefile f
+		on c.course_number = f.course_number
+		order by 1 desc limit #{startRow}, #{rowCount}
+	</select>
+	
+	<select id="selectDetail" resultType="courseVO" parameterType="_int" >
+		select course_number,course_name, course_detail, course_img_title, course_img_detail, course_difficulty, course_start,course_start_detail,course_end,course_end_detail
+		from tbl_course 
+		where course_number = #{courseNumber}
 	</select>
 	
 	<!-- 최근 게시글 번호 -->
@@ -22,5 +30,10 @@
 	<select id="selectCoursesInMain" resultType="courseVO">
 		select course_name, cousre_img_title
 		from tbl_course
+	</select>
+</mapper>
+	<!-- 게시글 전체 개수  -->
+	<select id="getTotal" resultType="_int">
+		select count(course_number) from tbl_course
 	</select>
 </mapper>

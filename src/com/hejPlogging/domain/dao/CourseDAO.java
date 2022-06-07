@@ -29,5 +29,6 @@ public class CourseDAO {
    public int getSeq() {
 	return sqlSession.selectOne("Course.getSeq");
    }
+
 }
 

@@ -2,7 +2,9 @@ package com.hejPlogging;
 
 import java.io.IOException;
 
+import java.io.PrintWriter;
 
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -10,12 +12,15 @@ import com.hejPlogging.action.Action;
 import com.hejPlogging.action.ActionInfo;
 import com.hejPlogging.domain.dao.CourseDAO;
 import com.hejPlogging.domain.dao.CourseFileDAO;
+import com.hejPlogging.domain.vo.CourseFileVO;
 import com.hejPlogging.domain.vo.CourseVO;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 public class CourseAdd implements Action{
 	
+	private ServletResponse response;
+
 	@Override
 	public ActionInfo execute(HttpServletRequest req, HttpServletResponse resp) throws IOException{
 		req.setCharacterEncoding("UTF-8");
@@ -26,9 +31,11 @@ public class CourseAdd implements Action{
 		CourseFileDAO fileDAO = new CourseFileDAO();
 		CourseVO courseVO = new CourseVO();
 		CourseDAO courseDAO = new CourseDAO();
+		CourseFileVO fileVO = new CourseFileVO();
 		
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
 		
+		//courseVO.setCourseNumber(Integer.parseInt(multipartRequest.getParameter("courseNumber")));
 		courseVO.setCourseName(multipartRequest.getParameter("courseName"));
 		courseVO.setCourseDetail(multipartRequest.getParameter("courseDetail"));
 		courseVO.setCourseImgTitle(multipartRequest.getParameter("courseImgTitle"));
@@ -39,18 +46,25 @@ public class CourseAdd implements Action{
 		courseVO.setCourseStartDetail(multipartRequest.getParameter("courseStartDetail"));
 		courseVO.setCourseEndDetail(multipartRequest.getParameter("courseEndDetail"));
 
+		
 		courseDAO.join(courseVO);
+//		courseDAO.insert(multipartRequest, courseDAO.getSeq());
 		fileDAO.insert(multipartRequest, courseDAO.getSeq());
 		
+//		int courseNumber = courseDAO.getSeq();
+//		int courseNumber = Integer.parseInt(multipartRequest.getParameter("courseNumber"));
+//		int courseNumber = fileVO.getCourseNumber();
 //		req.setAttribute("memberName", memberVO.getMemberName());
 //		req.setAttribute("CourseName", courseVO.getCourseName());
-		req.setAttribute("courseList", courseDAO.selectCourses());
-//		req.setAttribute("coursefileList", fileDAO.select(fileSize));
+//		req.setAttribute("courseList", courseDAO.selectCourses());
+//		req.setAttribute("coursefileList", fileDAO.select(courseNumber));
+//		System.out.println(courseNumber);
 //		System.out.println(courseDAO.selectCourses().get(0).getCourseName());
-//		System.out.println(fileDAO.selectCourses().get(0).getCourseName());
-		actionInfo.setRedirect(false);
-		actionInfo.setPath("/courseMain.jsp");
-		
+//		System.out.println(fileDAO.select(courseVO.getCourseNumber()).get(0).getFileName());
+		actionInfo.setRedirect(true);
+//		actionInfo.setPath("/courseMain.jsp");
+		actionInfo.setPath(req.getContextPath() + "/courseMainInfo.cs");
+
 		return actionInfo;
 	}
 }
