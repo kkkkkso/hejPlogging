@@ -1,6 +1,7 @@
 package com.hejPlogging;
 
 import java.io.IOException;
+
 import java.io.PrintWriter;
 
 import javax.servlet.ServletResponse;
@@ -23,7 +24,7 @@ public class CourseAdd implements Action{
 	@Override
 	public ActionInfo execute(HttpServletRequest req, HttpServletResponse resp) throws IOException{
 		req.setCharacterEncoding("UTF-8");
-		String uploadPath = "C:\\Users\\hijin\\Desktop\\web_1900_hds\\java\\workspace\\1teamWeb\\WebContent\\upload";
+		String uploadPath = "C:\\upload";
 		int fileSize = 1024 * 1024 * 5; //5M
 		
 		ActionInfo actionInfo = new ActionInfo();
