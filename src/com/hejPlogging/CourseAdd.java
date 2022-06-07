@@ -1,7 +1,7 @@
 package com.hejPlogging;
 
 import java.io.IOException;
-
+//테스트
 import java.io.PrintWriter;
 
 import javax.servlet.ServletResponse;
@@ -36,6 +36,7 @@ public class CourseAdd implements Action{
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
 		
 		//courseVO.setCourseNumber(Integer.parseInt(multipartRequest.getParameter("courseNumber")));
+		//테스트
 		courseVO.setCourseName(multipartRequest.getParameter("courseName"));
 		courseVO.setCourseDetail(multipartRequest.getParameter("courseDetail"));
 		courseVO.setCourseImgTitle(multipartRequest.getParameter("courseImgTitle"));
