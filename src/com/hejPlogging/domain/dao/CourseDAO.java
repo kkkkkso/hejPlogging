@@ -18,25 +18,30 @@ public class CourseDAO {
       sqlSession = sqlSessionFactory.openSession(true);
    }
 
-   //ÄÚ½º db Ãß°¡
+   //ï¿½Ú½ï¿½ db ï¿½ß°ï¿½
    public void join(CourseVO courseVO) {
    sqlSession.insert("Course.join", courseVO);
    }
 
-   //ÄÚ½º ÀüÃ¼ ¸ñ·Ï
+   //ï¿½Ú½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½
    public List<CourseDTO> selectCourses(Map<String, Integer> courseMap){
        return sqlSession.selectList("Course.selectCourses",courseMap);
    }
-   //ÃÖ±Ù °Ô½Ã±Û ¹øÈ£
+   
+   public List<CourseDTO> selectImage(Map<String, Integer> courseMap){
+       return sqlSession.selectList("Course.selectImage",courseMap);
+   }
+   
+   //ï¿½Ö±ï¿½ ï¿½Ô½Ã±ï¿½ ï¿½ï¿½È£
    public int getSeq() {
    return sqlSession.selectOne("Course.getSeq");
    }
 
- //°Ô½Ã±Û ÀüÃ¼ °³¼ö
+ //ï¿½Ô½Ã±ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
    public int getTotal() {
        return sqlSession.selectOne("Course.getTotal");
    }
-//°Ô½Ã±Û Á¤º¸ Á¶È¸
+//ï¿½Ô½Ã±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
    public CourseVO selectDetail(int courseNumber) {
        return sqlSession.selectOne("Course.selectDetail", courseNumber);
        }    
